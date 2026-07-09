@@ -9,6 +9,7 @@
 
 class MIPData
 {
+public:
     IloEnv env;
     IloModel model;
 
@@ -60,6 +61,11 @@ class MIPData
             span = IloNumVar(env, config_data.lower_bound, config_data.upper_bound, ILOINT);
             is_span_initialized = true;
         }
+    }
+
+    ~MIPData()
+    {
+        env.end();
     }
 };
 
