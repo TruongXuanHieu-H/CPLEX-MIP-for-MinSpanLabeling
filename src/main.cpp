@@ -66,8 +66,17 @@ int main(int argc, char *argv[])
     cplex.setOut(std::cout);
     cplex.setParam(IloCplex::Param::TimeLimit, config_data.time_limit);
 
-    if (cplex.solve())
+    bool result = cplex.solve();
+    if (result)
     {
+        std::cout << "! --------------------------------------------------------\n";
+        std::cout << "! Solve = " << result << '\n';
+        std::cout << "! Status = " << cplex.getStatus() << '\n';
+        std::cout << "! Cplex status = " << cplex.getCplexStatus() << '\n';
+        std::cout << "! Obj = " << cplex.getObjValue() << '\n';
+        std::cout << "! BestBound = " << cplex.getBestObjValue() << '\n';
+        std::cout << "! --------------------------------------------------------\n";
+
         std::vector<int> solution(graph_data.num_vertices + 1);
 
         for (int v = 1; v <= graph_data.num_vertices; v++)
