@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 
     IloCplex cplex(model);
     cplex.setOut(std::cout);
-    cplex.setParam(IloCplex::TiLim, config_data.time_limit);
+    cplex.setParam(IloCplex::Param::TimeLimit, config_data.time_limit);
 
     if (cplex.solve())
     {
