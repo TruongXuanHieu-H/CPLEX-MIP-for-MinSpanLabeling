@@ -1,0 +1,63 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/S-sherman4.mtx.rnd
+! Target value is set to 261
+! Lower bound is set to 262
+! Upper bound is set to 546
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1 rows and 2682 columns.
+Aggregator did 2682 substitutions.
+Reduced MIP has 4569 rows, 3229 columns, and 10479 nonzeros.
+Reduced MIP has 1341 binaries, 1888 generals, 0 SOSs, and 2682 indicators.
+Presolve time = 0.02 sec. (9.04 ticks)
+Found incumbent of value 546.000000 after 0.03 sec. (19.22 ticks)
+Probing time = 0.02 sec. (1.73 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 4569 rows, 3229 columns, and 10479 nonzeros.
+Reduced MIP has 1341 binaries, 1888 generals, 0 SOSs, and 2682 indicators.
+Presolve time = 0.01 sec. (8.99 ticks)
+Probing time = 0.01 sec. (1.41 ticks)
+Clique table members: 28.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.02 sec. (12.67 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          546.0000      262.0000            52.01%
+      0     0      262.0000  1341      546.0000      262.0000     1341   52.01%
+      0     0      262.0000  1877      546.0000     Cuts: 596     2322   52.01%
+*     0+    0                          262.0000      262.0000             0.00%
+      0     0        cutoff            262.0000      262.0000     2920    0.00%
+Elapsed time = 0.48 sec. (336.09 ticks, tree = 0.01 MB, solutions = 2)
+
+Clique cuts applied:  4
+Cover cuts applied:  213
+Implied bound cuts applied:  618
+Zero-half cuts applied:  14
+Gomory fractional cuts applied:  173
+
+Root node processing (before b&c):
+  Real time             =    0.48 sec. (336.46 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.48 sec. (336.46 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 262
+! BestBound = 262
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 262
+! Labeling: 262 262 1 1 1 262 262 262 262 262 1 262 262 1 262 262 262 1 1 1 262 1 1 262 1 1 262 262 262 1 1 1 1 1 262 262 1 262 1 262 262 1 262 1 1 1 1 1 1 1 1 1 262 262 1 262 262 1 1 1 1 1 1 1 1 262 1 262 1 262 1 262 262 262 262 262 262 1 262 262 1 1 262 1 262 262 1 262 262 262 262 262 1 1 262 1 262 1 1 1 1 262 262 1 1 1 1 262 1 262 1 262 262 262 262 1 1 1 1 1 262 1 1 1 1 1 1 262 1 1 262 1 1 1 1 262 262 1 262 1 1 1 262 262 262 262 262 262 1 262 262 1 262 262 1 1 1 1 262 262 262 262 1 262 1 1 262 1 262 262 262 262 1 1 262 1 1 1 262 262 262 262 262 262 262 1 1 1 1 262 262 1 262 1 1 1 262 262 262 1 262 262 262 1 1 1 262 262 1 262 262 1 262 1 262 262 1 262 1 1 1 1 262 262 262 1 262 1 1 262 1 262 262 1 1 1 1 262 262 262 1 1 262 262 1 1 1 1 262 262 262 262 1 1 1 1 262 1 1 262 262 1 262 262 1 1 1 1 1 1 262 1 1 262 262 262 1 262 1 1 1 262 1 262 1 1 262 1 1 262 262 1 1 1 1 1 262 262 1 1 262 262 262 262 262 1 262 262 262 262 1 1 262 1 262 1 262 262 1 262 1 1 262 262 1 262 262 1 1 262 262 262 1 1 1 1 1 1 262 262 1 1 262 1 1 262 1 262 1 262 262 262 1 262 1 262 262 262 262 262 262 262 262 1 262 1 1 1 1 262 1 262 262 262 262 1 262 262 1 262 262 262 1 1 1 262 1 262 262 262 262 1 262 1 1 1 262 262 262 1 1 1 262 262 1 262 1 262 262 1 262 1 1 1 1 262 262 262 1 262 262 262 262 1 1 1 262 262 262 262 1 262 262 1 1 1 1 262 1 1 262 262 1 262 262 262 1 262 262 1 262 1 1 1 1 262 262 262 262 262 1 1 262 262 1 262 1 1 1 1 262 1 1 262 262 1 262 1 262 1 1 262 262 1 262 262 262 262 1 262 262 262 262 1 262 1 262 1 262 262 1 262 1 1 1 1 1 1 262 1 1 1 1 1 1 1 262 1 262 1 262 262 262 1 262 262 1 1 1 262 1 262 262 1 1 262 262 262 1 262 262 262 262 262 1 1 
+! --------------------------------------------------------

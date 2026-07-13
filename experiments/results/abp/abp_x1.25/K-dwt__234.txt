@@ -1,0 +1,65 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/K-dwt__234.mtx.rnd
+! Target value is set to 63
+! Lower bound is set to 64
+! Upper bound is set to 147
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1 rows and 324 columns.
+Aggregator did 324 substitutions.
+Reduced MIP has 603 rows, 442 columns, and 1368 nonzeros.
+Reduced MIP has 162 binaries, 280 generals, 0 SOSs, and 324 indicators.
+Presolve time = 0.00 sec. (1.21 ticks)
+Found incumbent of value 147.000000 after 0.00 sec. (2.08 ticks)
+Probing time = 0.00 sec. (0.48 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 603 rows, 442 columns, and 1368 nonzeros.
+Reduced MIP has 162 binaries, 280 generals, 0 SOSs, and 324 indicators.
+Presolve time = 0.00 sec. (1.22 ticks)
+Probing time = 0.00 sec. (0.47 ticks)
+Clique table members: 9.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.14 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          147.0000       64.0000            56.46%
+      0     0       64.0000   162      147.0000       64.0000      162   56.46%
+      0     0       64.0000   202      147.0000     Cuts: 248      388   56.46%
+      0     0       64.0000    69      147.0000      Cuts: 31      422   56.46%
+      0     0       64.0000    85      147.0000      Cuts: 38      466   56.46%
+*     0+    0                          127.0000       64.0000            49.61%
+      0     0        cutoff            127.0000      127.0000      466    0.00%
+Elapsed time = 0.08 sec. (43.92 ticks, tree = 0.01 MB, solutions = 2)
+
+Clique cuts applied:  6
+Cover cuts applied:  5
+Implied bound cuts applied:  88
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  91
+
+Root node processing (before b&c):
+  Real time             =    0.08 sec. (43.97 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.08 sec. (43.97 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 127
+! BestBound = 127
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 127
+! Labeling: 127 1 1 64 127 1 1 64 127 1 1 1 127 1 1 1 1 64 127 1 127 1 1 64 1 1 1 127 11 1 1 64 64 11 127 1 64 1 1 64 1 64 11 64 1 1 1 64 1 64 1 64 64 11 1 1 1 64 64 127 64 64 64 1 127 1 64 64 1 1 64 1 64 1 127 127 1 1 64 1 127 1 64 1 1 1 1 64 127 127 1 127 127 1 64 64 64 1 64 64 1 1 1 1 1 64 1 1 64 127 127 1 1 74 64 1 1 
+! --------------------------------------------------------

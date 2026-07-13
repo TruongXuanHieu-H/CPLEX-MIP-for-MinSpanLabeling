@@ -1,0 +1,62 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/A-pores_1.mtx.rnd
+! Target value is set to 6
+! Lower bound is set to 7
+! Upper bound is set to 30
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1 rows and 206 columns.
+Aggregator did 206 substitutions.
+Reduced MIP has 339 rows, 237 columns, and 781 nonzeros.
+Reduced MIP has 103 binaries, 134 generals, 0 SOSs, and 206 indicators.
+Presolve time = 0.00 sec. (0.64 ticks)
+Found incumbent of value 30.000000 after 0.00 sec. (1.14 ticks)
+Probing time = 0.00 sec. (0.53 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 339 rows, 237 columns, and 781 nonzeros.
+Reduced MIP has 103 binaries, 134 generals, 0 SOSs, and 206 indicators.
+Presolve time = 0.00 sec. (0.63 ticks)
+Probing time = 0.00 sec. (0.51 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (0.62 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           30.0000        7.0000            76.67%
+*     0+    0                           19.0000        7.0000            63.16%
+      0     0        7.0000   103       19.0000        7.0000      103   63.16%
+      0     0        7.0000   194       19.0000     Cuts: 143      221   63.16%
+      0     0        7.0000   195       19.0000     Cuts: 106      319   63.16%
+      0     0        cutoff             19.0000       19.0000      319    0.00%
+Elapsed time = 0.07 sec. (25.86 ticks, tree = 0.01 MB, solutions = 2)
+
+Implied bound cuts applied:  27
+Mixed integer rounding cuts applied:  6
+Lift and project cuts applied:  6
+Gomory fractional cuts applied:  12
+
+Root node processing (before b&c):
+  Real time             =    0.07 sec. (25.88 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.07 sec. (25.88 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 19
+! BestBound = 19
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 19
+! Labeling: 19 13 19 7 13 7 13 19 19 1 7 13 7 7 13 1 19 1 7 1 19 13 7 7 1 19 13 1 1 13 
+! --------------------------------------------------------

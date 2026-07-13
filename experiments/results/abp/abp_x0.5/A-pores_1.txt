@@ -1,0 +1,101 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/A-pores_1.mtx.rnd
+! Target value is set to 3
+! Lower bound is set to 4
+! Upper bound is set to 15
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1 rows and 213 columns.
+MIP Presolve modified 860 coefficients.
+Aggregator did 206 substitutions.
+Reduced MIP has 414 rows, 680 columns, and 2121 nonzeros.
+Reduced MIP has 546 binaries, 134 generals, 0 SOSs, and 206 indicators.
+Presolve time = 0.00 sec. (2.70 ticks)
+Probing time = 0.01 sec. (4.56 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 414 rows, 680 columns, and 2121 nonzeros.
+Reduced MIP has 546 binaries, 134 generals, 0 SOSs, and 206 indicators.
+Presolve time = 0.00 sec. (1.77 ticks)
+Probing time = 0.00 sec. (2.32 ticks)
+Clique table members: 1667.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.01 sec. (1.52 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        4.0000    97                      4.0000      109         
+      0     0        4.0000   273                   Cuts: 203      277         
+      0     0        4.0000   254                   Cuts: 103      365         
+      0     0        4.0000   259                   Cuts: 132      446         
+*     0+    0                           15.0000        4.0000            73.33%
+Detecting symmetries...
+      0     2        4.0000   145       15.0000        4.0000      446   73.33%
+Elapsed time = 0.17 sec. (83.88 ticks, tree = 0.02 MB, solutions = 1)
+*   306+  206                           14.0000        4.0000            71.43%
+*  1053+  647                           13.0000        4.0000            69.23%
+*  1362   746      integral     0       12.0000        4.0000    15272   66.67%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 4 rows and 116 columns.
+MIP Presolve modified 799 coefficients.
+Reduced MIP has 410 rows, 564 columns, and 1769 nonzeros.
+Reduced MIP has 430 binaries, 134 generals, 0 SOSs, and 206 indicators.
+Presolve time = 0.00 sec. (1.22 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 18 columns.
+Reduced MIP has 410 rows, 546 columns, and 1715 nonzeros.
+Reduced MIP has 412 binaries, 134 generals, 0 SOSs, and 206 indicators.
+Presolve time = 0.00 sec. (1.05 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 410 rows, 546 columns, and 1715 nonzeros.
+Reduced MIP has 412 binaries, 134 generals, 0 SOSs, and 206 indicators.
+Presolve time = 0.00 sec. (1.50 ticks)
+Represolve time = 0.03 sec. (15.15 ticks)
+   3475     0        4.0000   279       12.0000     Cuts: 202    40137   41.67%
+   3475     0        4.0000   293       12.0000     Cuts: 202    40339   41.67%
+   3475     0        4.0113   313       12.0000     Cuts: 202    40609   41.67%
+   3475     0        5.0000   304       12.0000     Cuts: 202    40779   41.67%
+   3475     0        5.0000   308       12.0000     Cuts: 202    40921   41.67%
+   3475     0        5.0000   316       12.0000     Cuts: 202    41183   41.67%
+   3475     2        5.0000   177       12.0000        7.0000    41183   41.67%
+   4183   238       10.0000   172       12.0000        7.0000    67160   41.67%
+   4552   134       10.0000   154       12.0000       10.0000   103110   16.67%
+
+GUB cover cuts applied:  198
+Clique cuts applied:  27
+Cover cuts applied:  271
+Implied bound cuts applied:  47
+Flow cuts applied:  13
+Mixed integer rounding cuts applied:  73
+Zero-half cuts applied:  5
+Lift and project cuts applied:  3
+Gomory fractional cuts applied:  34
+
+Root node processing (before b&c):
+  Real time             =    0.16 sec. (83.65 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    2.61 sec. (1124.13 ticks)
+  Sync time (average)   =    0.76 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    2.77 sec. (1207.78 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 12
+! BestBound = 12
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 12
+! Labeling: 1 6 1 12 12 4 10 2 1 7 4 11 6 12 12 9 1 8 12 1 3 6 4 12 9 7 4 9 9 5 
+! --------------------------------------------------------

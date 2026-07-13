@@ -1,0 +1,63 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/V-nos6.mtx.rnd
+! Target value is set to 411
+! Lower bound is set to 412
+! Upper bound is set to 844
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1 rows and 2580 columns.
+Aggregator did 2580 substitutions.
+Reduced MIP has 4545 rows, 3256 columns, and 10380 nonzeros.
+Reduced MIP has 1290 binaries, 1966 generals, 0 SOSs, and 2580 indicators.
+Presolve time = 0.02 sec. (8.92 ticks)
+Found incumbent of value 844.000000 after 0.03 sec. (33.59 ticks)
+Probing time = 0.02 sec. (1.32 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 4545 rows, 3256 columns, and 10380 nonzeros.
+Reduced MIP has 1290 binaries, 1966 generals, 0 SOSs, and 2580 indicators.
+Presolve time = 0.01 sec. (8.81 ticks)
+Probing time = 0.01 sec. (1.08 ticks)
+Clique table members: 12.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.02 sec. (11.94 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          844.0000      412.0000            51.18%
+      0     0      412.0000  1290      844.0000      412.0000     1290   51.18%
+      0     0      412.0000  2373      844.0000     Cuts: 871     2695   51.18%
+*     0+    0                          412.0000      412.0000             0.00%
+      0     0        cutoff            412.0000      412.0000     3342    0.00%
+Elapsed time = 0.39 sec. (342.83 ticks, tree = 0.01 MB, solutions = 2)
+
+Clique cuts applied:  6
+Cover cuts applied:  108
+Implied bound cuts applied:  962
+Lift and project cuts applied:  3
+Gomory fractional cuts applied:  209
+
+Root node processing (before b&c):
+  Real time             =    0.39 sec. (343.19 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.39 sec. (343.19 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 412
+! BestBound = 412
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 412
+! Labeling: 412 412 412 1 412 1 1 412 412 1 1 412 1 1 1 412 1 412 1 412 412 1 412 1 412 412 1 1 412 1 412 412 1 1 1 412 1 412 412 1 412 1 412 1 412 412 1 412 412 1 412 412 412 1 1 1 1 412 1 1 412 1 1 412 412 1 1 1 1 412 412 412 412 1 1 412 412 412 1 412 412 1 1 1 412 1 1 1 1 412 412 412 1 412 1 1 412 412 412 412 1 412 412 412 412 412 412 1 412 412 412 412 412 412 412 1 412 1 1 1 1 412 1 1 412 412 412 1 1 1 412 412 412 1 412 1 1 412 412 1 1 412 412 1 1 1 412 412 1 412 1 412 1 412 1 1 412 412 412 1 1 1 1 1 412 412 1 412 412 1 1 1 412 1 1 412 412 412 412 412 412 1 1 1 412 1 1 1 412 1 1 1 1 412 1 1 1 412 412 412 1 1 1 1 412 1 1 1 1 1 1 1 1 1 1 412 412 412 1 412 412 1 1 412 412 1 1 1 412 412 412 1 1 1 1 412 1 412 1 412 412 412 412 412 1 412 412 1 1 412 1 1 412 412 412 412 412 412 412 412 1 412 1 412 1 412 412 412 412 412 1 1 1 412 1 412 412 412 1 1 412 1 1 412 1 1 1 1 1 412 412 1 412 1 412 1 1 1 1 1 412 412 1 412 1 1 1 412 1 412 412 412 1 412 412 1 1 1 1 412 1 1 1 412 412 1 412 1 412 412 412 412 1 1 412 412 412 412 1 1 412 1 412 412 412 1 412 412 1 412 1 412 412 1 1 412 412 412 412 412 1 1 412 412 412 1 412 412 1 1 412 1 1 412 412 412 412 1 412 412 412 412 1 412 412 412 412 412 1 1 412 412 412 1 1 1 1 412 412 1 1 412 412 1 412 412 1 1 1 412 1 412 412 412 1 1 412 1 412 1 1 412 412 412 1 1 412 412 1 412 412 1 412 412 1 412 412 412 412 1 412 1 1 412 412 1 412 412 1 1 412 1 1 1 412 412 412 412 412 1 412 1 1 1 1 1 1 1 1 412 1 412 412 412 412 412 412 1 1 412 1 1 412 412 412 1 412 1 1 412 412 1 1 1 412 412 412 1 412 412 1 1 412 1 1 1 1 412 1 412 1 1 1 412 412 412 412 412 1 1 412 412 1 1 412 1 412 1 1 1 412 1 1 1 1 1 1 1 412 1 1 412 412 1 1 1 1 1 412 412 1 1 412 412 412 412 412 1 412 1 412 1 412 1 412 1 1 1 412 1 1 412 1 1 412 412 412 1 1 412 412 1 412 412 1 1 412 1 412 412 412 412 412 1 412 412 1 1 1 1 412 412 412 412 1 1 1 1 1 412 412 1 1 412 412 1 1 412 412 1 1 412 1 412 412 412 1 1 1 1 412 1 1 1 412 412 1 412 1 1 1 1 1 1 412 412 1 1 1 412 1 1 1 1 412 412 1 412 412 1 1 1 412 1 1 1 412 412 1 412 1 412 412 412 412 
+! --------------------------------------------------------

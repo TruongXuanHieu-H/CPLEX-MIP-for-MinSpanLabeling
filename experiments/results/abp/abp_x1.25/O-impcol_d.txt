@@ -1,0 +1,89 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/O-impcol_d.mtx.rnd
+! Target value is set to 150
+! Lower bound is set to 151
+! Upper bound is set to 532
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1 rows and 2534 columns.
+Aggregator did 2534 substitutions.
+Reduced MIP has 4226 rows, 2960 columns, and 9719 nonzeros.
+Reduced MIP has 1267 binaries, 1693 generals, 0 SOSs, and 2534 indicators.
+Presolve time = 0.02 sec. (8.37 ticks)
+Found incumbent of value 532.000000 after 0.03 sec. (20.63 ticks)
+Probing time = 0.02 sec. (6.99 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 4226 rows, 2960 columns, and 9719 nonzeros.
+Reduced MIP has 1267 binaries, 1693 generals, 0 SOSs, and 2534 indicators.
+Presolve time = 0.01 sec. (8.12 ticks)
+Probing time = 0.01 sec. (2.41 ticks)
+Clique table members: 100.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.02 sec. (11.14 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          532.0000      151.0000            71.62%
+      0     0      151.0000  1267      532.0000      151.0000     1267   71.62%
+      0     0      151.0000  1715      532.0000     Cuts: 483     2089   71.62%
+      0     0      151.0000  1482      532.0000     Cuts: 322     2549   71.62%
+      0     0      151.0000  1518      532.0000     Cuts: 206     2859   71.62%
+Detecting symmetries...
+      0     2      151.0000  1240      532.0000      151.0000     2859   71.62%
+Elapsed time = 0.73 sec. (376.61 ticks, tree = 0.02 MB, solutions = 1)
+    505   425      301.0000   328      532.0000      151.0000    12169   71.62%
+   1169   946      301.0000   289      532.0000      151.0000    20343   71.62%
+   1701  1428      412.0000   337      532.0000      151.0000    37425   71.62%
+   2305  2053      301.0000   363      532.0000      151.0000    60293   71.62%
+   3002  2594      451.0000   108      532.0000      151.0000    76478   71.62%
+*  3433+ 2936                          451.0000      151.0000            66.52%
+   3617  1763      262.0000   715      451.0000      151.0000    95247   66.52%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve modified 3783 coefficients.
+Reduced MIP has 4226 rows, 2960 columns, and 9719 nonzeros.
+Reduced MIP has 1267 binaries, 1693 generals, 0 SOSs, and 2534 indicators.
+Presolve time = 0.01 sec. (5.12 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 4226 rows, 2960 columns, and 9719 nonzeros.
+Reduced MIP has 1267 binaries, 1693 generals, 0 SOSs, and 2534 indicators.
+Presolve time = 0.01 sec. (8.41 ticks)
+Represolve time = 0.06 sec. (28.22 ticks)
+   3620     0      168.9354  2488      451.0000    Cuts: 1156   102256   33.26%
+
+Clique cuts applied:  1
+Implied bound cuts applied:  479
+Flow cuts applied:  8
+Mixed integer rounding cuts applied:  620
+Zero-half cuts applied:  10
+Lift and project cuts applied:  3
+Gomory fractional cuts applied:  81
+
+Root node processing (before b&c):
+  Real time             =    0.72 sec. (375.07 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    2.19 sec. (1631.89 ticks)
+  Sync time (average)   =    0.33 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    2.91 sec. (2006.97 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 451
+! BestBound = 451
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 451
+! Labeling: 301 151 151 151 451 1 1 451 151 1 151 1 1 451 1 151 301 151 151 451 451 451 151 301 301 1 151 1 451 451 151 151 1 451 151 301 151 1 151 301 301 151 151 151 151 301 151 151 151 1 301 151 1 1 151 301 301 1 151 151 1 1 1 1 451 1 301 451 1 1 151 1 301 451 151 451 151 151 451 151 151 1 1 1 1 151 451 151 301 151 451 1 1 451 451 151 151 451 1 151 1 301 1 151 301 151 151 1 451 451 1 301 151 151 301 151 1 451 1 301 451 301 1 151 1 301 151 1 151 151 151 301 151 301 301 301 301 451 451 451 151 301 1 1 151 1 151 1 1 1 301 301 451 151 1 151 151 451 301 1 451 1 301 1 1 1 301 151 151 151 301 451 1 451 451 451 1 451 301 451 151 151 451 151 151 451 151 301 451 1 1 301 301 151 301 1 1 301 301 301 1 151 1 301 301 151 301 301 451 151 451 301 151 451 1 151 1 1 151 301 301 451 451 1 301 301 151 301 151 1 151 151 451 151 451 151 1 451 1 301 1 151 1 301 151 451 1 301 151 301 1 451 451 301 151 151 451 1 1 301 451 151 301 301 1 1 1 151 151 301 301 301 151 151 301 151 301 151 301 301 1 301 451 1 1 301 451 301 301 451 301 301 151 301 151 301 1 1 301 1 451 301 1 151 1 451 1 1 151 1 1 151 451 151 451 151 1 451 151 301 151 1 1 151 151 301 1 451 1 451 151 301 1 301 451 151 151 451 151 301 301 1 151 151 151 301 1 1 151 1 301 301 151 151 451 451 301 301 1 151 451 1 301 301 1 301 151 151 301 301 1 151 1 451 1 301 151 301 301 451 151 451 1 451 1 151 301 1 301 1 151 451 451 151 1 1 301 151 1 1 151 151 451 1 1 451 1 301 301 151 1 1 1 301 451 1 301 151 151 301 151 1 151 451 151 
+! --------------------------------------------------------

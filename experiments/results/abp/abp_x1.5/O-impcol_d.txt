@@ -1,0 +1,76 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/O-impcol_d.mtx.rnd
+! Target value is set to 180
+! Lower bound is set to 181
+! Upper bound is set to 638
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1 rows and 2534 columns.
+Aggregator did 2534 substitutions.
+Reduced MIP has 4226 rows, 2960 columns, and 9719 nonzeros.
+Reduced MIP has 1267 binaries, 1693 generals, 0 SOSs, and 2534 indicators.
+Presolve time = 0.02 sec. (8.37 ticks)
+Found incumbent of value 638.000000 after 0.03 sec. (20.63 ticks)
+Probing time = 0.02 sec. (6.99 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 4226 rows, 2960 columns, and 9719 nonzeros.
+Reduced MIP has 1267 binaries, 1693 generals, 0 SOSs, and 2534 indicators.
+Presolve time = 0.01 sec. (8.12 ticks)
+Probing time = 0.01 sec. (2.41 ticks)
+Clique table members: 100.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.02 sec. (11.14 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          638.0000      181.0000            71.63%
+      0     0      181.0000  1267      638.0000      181.0000     1267   71.63%
+      0     0      181.0000  1758      638.0000     Cuts: 487     2093   71.63%
+      0     0      181.0000  1313      638.0000     Cuts: 290     2574   71.63%
+      0     0      181.0000  1151      638.0000     Cuts: 191     2830   71.63%
+      0     0      181.0000  1004      638.0000      Cuts: 77     2969   71.63%
+      0     0      181.0000  1152      638.0000      Cuts: 40     3037   71.63%
+Detecting symmetries...
+Detecting symmetries...
+      0     2      181.0000  1076      638.0000      181.0000     3037   71.63%
+Elapsed time = 0.69 sec. (421.88 ticks, tree = 0.02 MB, solutions = 1)
+    430   372      181.0000   743      638.0000      181.0000    13800   71.63%
+    994   788      541.0000   196      638.0000      181.0000    21742   71.63%
+   1718  1426      361.0000   361      638.0000      181.0000    36262   71.63%
+*  1832+ 1491                          542.0000      181.0000            66.61%
+*  1849  1579      integral     0      541.0000      181.0000    41156   66.54%
+   2597   860      208.5510  1687      541.0000      181.0000    60256   66.54%
+   2809   865      181.0000   785      541.0000      181.0000    63354   66.54%
+   3530   803    infeasible            541.0000      361.0000    76472   33.27%
+
+Clique cuts applied:  2
+Cover cuts applied:  3
+Implied bound cuts applied:  1191
+Zero-half cuts applied:  53
+Gomory fractional cuts applied:  40
+
+Root node processing (before b&c):
+  Real time             =    0.68 sec. (420.25 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    3.16 sec. (1601.73 ticks)
+  Sync time (average)   =    1.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    3.84 sec. (2021.97 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 541
+! BestBound = 541
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 541
+! Labeling: 1 541 181 1 1 1 1 541 361 181 361 1 541 541 541 181 1 181 1 1 1 1 1 1 181 1 361 1 181 0 181 181 361 1 541 181 181 181 541 1 1 1 361 1 181 541 181 181 181 361 541 541 1 361 181 541 1 181 541 361 361 541 361 181 1 361 181 181 361 361 541 361 1 181 1 1 181 541 541 1 361 541 361 361 1 181 361 1 1 181 1 361 541 541 181 1 181 181 541 541 541 361 181 181 1 361 541 361 541 181 541 541 361 1 541 40 1 1 1 361 181 1 361 361 1 541 361 541 181 181 0 1 181 361 541 361 1 541 541 541 541 541 181 1 181 1 1 541 181 0 541 1 361 541 541 361 1 541 1 361 181 361 181 181 541 361 1 1 541 1 541 1 181 181 1 541 1 181 361 361 181 0 361 1 541 361 1 1 541 181 361 541 1 1 541 361 541 541 1 541 181 181 361 361 541 541 1 181 361 1 1 541 181 181 541 541 541 361 181 1 361 1 541 181 181 181 1 181 181 541 1 1 361 541 541 541 181 1 0 1 361 181 541 1 1 181 1 541 181 1 361 1 181 541 361 181 541 181 181 541 1 361 1 181 361 181 541 361 1 541 181 541 181 361 541 181 1 1 1 1 361 361 361 541 361 361 181 0 361 541 361 1 1 1 361 541 541 541 1 541 181 181 1 361 361 541 1 181 181 361 361 181 1 541 541 181 541 361 361 361 361 0 361 181 1 361 541 181 181 1 181 1 361 1 541 361 1 1 541 541 361 0 181 541 1 1 1 181 1 361 1 1 361 361 181 541 1 1 541 181 181 541 1 1 181 181 1 181 181 181 541 181 181 361 361 1 361 541 361 1 541 181 361 361 181 361 181 361 0 361 181 361 1 181 361 181 541 541 181 361 1 181 181 361 1 181 361 361 1 181 1 541 1 1 541 541 1 41 181 1 361 1 181 361 181 
+! --------------------------------------------------------

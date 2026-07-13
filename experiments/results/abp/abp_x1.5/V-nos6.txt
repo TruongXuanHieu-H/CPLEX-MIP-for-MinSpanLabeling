@@ -1,0 +1,63 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/V-nos6.mtx.rnd
+! Target value is set to 493
+! Lower bound is set to 494
+! Upper bound is set to 1013
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1 rows and 2580 columns.
+Aggregator did 2580 substitutions.
+Reduced MIP has 4545 rows, 3256 columns, and 10380 nonzeros.
+Reduced MIP has 1290 binaries, 1966 generals, 0 SOSs, and 2580 indicators.
+Presolve time = 0.02 sec. (8.92 ticks)
+Found incumbent of value 1013.000000 after 0.03 sec. (33.59 ticks)
+Probing time = 0.01 sec. (1.32 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 4545 rows, 3256 columns, and 10380 nonzeros.
+Reduced MIP has 1290 binaries, 1966 generals, 0 SOSs, and 2580 indicators.
+Presolve time = 0.01 sec. (8.81 ticks)
+Probing time = 0.01 sec. (1.08 ticks)
+Clique table members: 12.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.02 sec. (11.94 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         1013.0000      494.0000            51.23%
+      0     0      494.0000  1290     1013.0000      494.0000     1290   51.23%
+      0     0      494.0000  2499     1013.0000     Cuts: 871     2705   51.23%
+*     0+    0                          494.0000      494.0000             0.00%
+      0     0        cutoff            494.0000      494.0000     3334    0.00%
+Elapsed time = 0.37 sec. (357.55 ticks, tree = 0.01 MB, solutions = 2)
+
+Clique cuts applied:  3
+Cover cuts applied:  111
+Implied bound cuts applied:  979
+Lift and project cuts applied:  6
+Gomory fractional cuts applied:  202
+
+Root node processing (before b&c):
+  Real time             =    0.37 sec. (357.91 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.37 sec. (357.91 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 494
+! BestBound = 494
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 494
+! Labeling: 494 494 494 1 494 1 1 494 494 1 1 494 1 1 1 494 1 494 1 494 494 1 494 1 494 494 1 1 494 1 494 494 1 1 1 494 1 494 494 1 494 1 494 1 494 494 1 494 494 1 494 494 494 1 1 1 1 494 1 1 494 1 1 494 494 1 1 1 1 494 494 494 494 1 1 494 494 494 1 494 494 1 1 1 494 1 1 1 1 494 494 494 1 494 1 1 494 494 494 494 1 494 494 494 494 494 494 1 494 494 494 494 494 494 494 1 494 1 1 1 1 494 1 1 494 494 494 1 1 1 494 494 494 1 494 1 1 494 494 1 1 494 494 1 1 1 494 494 1 494 1 494 1 494 1 1 494 494 494 1 1 1 1 1 494 494 1 494 494 1 1 1 494 1 1 494 494 494 494 494 494 1 1 1 494 1 1 1 494 1 1 1 1 494 1 1 1 494 494 494 1 1 1 1 494 1 1 1 1 1 1 1 1 1 1 494 494 494 1 494 494 1 1 494 494 1 1 1 494 494 494 1 1 1 1 494 1 494 1 494 494 494 494 494 1 494 494 1 1 494 1 1 494 494 494 494 494 494 494 494 1 494 1 494 1 494 494 494 494 494 1 1 1 494 1 494 494 494 1 1 494 1 1 494 1 1 1 1 1 494 494 1 494 1 494 1 1 1 1 1 494 494 1 494 1 1 1 494 1 494 494 494 1 494 494 1 1 1 1 494 1 1 1 494 494 1 494 1 494 494 494 494 1 1 494 494 494 494 1 1 494 1 494 494 494 1 494 494 1 494 1 494 494 1 1 494 494 494 494 494 1 1 494 494 494 1 494 494 1 1 494 1 1 494 494 494 494 1 494 494 494 494 1 494 494 494 494 494 1 1 494 494 494 1 1 1 1 494 494 1 1 494 494 1 494 494 1 1 1 494 1 494 494 494 1 1 494 1 494 1 1 494 494 494 1 1 494 494 1 494 494 1 494 494 1 494 494 494 494 1 494 1 1 494 494 1 494 494 1 1 494 1 1 1 494 494 494 494 494 1 494 1 1 1 1 1 1 1 1 494 1 494 494 494 494 494 494 1 1 494 1 1 494 494 494 1 494 1 1 494 494 1 1 1 494 494 494 1 494 494 1 1 494 1 1 1 1 494 1 494 1 1 1 494 494 494 494 494 1 1 494 494 1 1 494 1 494 1 1 1 494 1 1 1 1 1 1 1 494 1 1 494 494 1 1 1 1 1 494 494 1 1 494 494 494 494 494 1 494 1 494 1 494 1 494 1 1 1 494 1 1 494 1 1 494 494 494 1 1 494 494 1 494 494 1 1 494 1 494 494 494 494 494 1 494 494 1 1 1 1 494 494 494 494 1 1 1 1 1 494 494 1 1 494 494 1 1 494 494 1 1 494 1 494 494 494 1 1 1 1 494 1 1 1 494 494 1 494 1 1 1 1 1 1 494 494 1 1 1 494 1 1 1 1 494 494 1 494 494 1 1 1 494 1 1 1 494 494 1 494 1 494 494 494 494 
+! --------------------------------------------------------

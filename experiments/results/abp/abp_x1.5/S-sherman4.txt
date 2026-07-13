@@ -1,0 +1,62 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/S-sherman4.mtx.rnd
+! Target value is set to 391
+! Lower bound is set to 392
+! Upper bound is set to 819
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1 rows and 2682 columns.
+Aggregator did 2682 substitutions.
+Reduced MIP has 4569 rows, 3229 columns, and 10479 nonzeros.
+Reduced MIP has 1341 binaries, 1888 generals, 0 SOSs, and 2682 indicators.
+Presolve time = 0.02 sec. (9.04 ticks)
+Found incumbent of value 819.000000 after 0.03 sec. (19.22 ticks)
+Probing time = 0.02 sec. (1.73 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 4569 rows, 3229 columns, and 10479 nonzeros.
+Reduced MIP has 1341 binaries, 1888 generals, 0 SOSs, and 2682 indicators.
+Presolve time = 0.01 sec. (8.99 ticks)
+Probing time = 0.01 sec. (1.41 ticks)
+Clique table members: 28.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.01 sec. (12.67 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          819.0000      392.0000            52.14%
+      0     0      392.0000  1341      819.0000      392.0000     1341   52.14%
+      0     0      392.0000  2423      819.0000     Cuts: 740     2497   52.14%
+*     0+    0                          392.0000      392.0000             0.00%
+      0     0        cutoff            392.0000      392.0000     3107    0.00%
+Elapsed time = 0.43 sec. (379.28 ticks, tree = 0.01 MB, solutions = 2)
+
+Clique cuts applied:  7
+Cover cuts applied:  101
+Implied bound cuts applied:  779
+Gomory fractional cuts applied:  216
+
+Root node processing (before b&c):
+  Real time             =    0.44 sec. (379.64 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.44 sec. (379.64 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 392
+! BestBound = 392
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 392
+! Labeling: 1 1 392 392 392 1 1 1 1 1 392 1 1 392 1 1 1 392 392 392 1 392 392 1 392 392 1 1 1 392 392 392 392 392 1 1 392 1 392 1 1 392 1 392 392 392 392 392 392 392 392 392 1 1 392 1 1 392 392 392 392 392 392 392 392 1 392 1 392 1 392 1 1 1 1 1 1 392 1 1 392 392 1 392 1 1 392 1 1 1 1 1 392 392 1 392 1 392 392 392 392 1 1 392 392 392 392 1 392 1 392 1 1 1 1 392 392 392 392 392 1 392 392 392 392 392 392 1 392 392 1 392 392 392 392 1 1 392 1 392 392 392 1 1 1 1 1 1 392 1 1 392 1 1 392 392 392 392 1 1 1 1 392 1 392 392 1 392 1 1 1 1 392 392 1 392 392 392 1 1 1 1 1 1 1 392 392 392 392 1 1 392 1 392 392 392 1 1 1 392 1 1 1 392 392 392 1 1 392 1 1 392 1 392 1 1 392 1 392 392 392 392 1 1 1 392 1 392 392 1 392 1 1 392 392 392 392 1 1 1 392 392 1 1 392 392 392 392 1 1 1 1 392 392 392 392 1 392 392 1 1 392 1 1 392 392 392 392 392 392 1 392 392 1 1 1 392 1 392 392 392 1 392 1 392 392 1 392 392 1 1 392 392 392 392 392 1 1 392 392 1 1 1 1 1 392 1 1 1 1 392 392 1 392 1 392 1 1 392 1 392 392 1 1 392 1 1 392 392 1 1 1 392 392 392 392 392 392 1 1 392 392 1 392 392 1 392 1 392 1 1 1 392 1 392 1 1 1 1 1 1 1 1 392 1 392 392 392 392 1 392 1 1 1 1 392 1 1 392 1 1 1 392 392 392 1 392 1 1 1 1 392 1 392 392 392 1 1 1 392 392 392 1 1 392 1 392 1 1 392 1 392 392 392 392 1 1 1 392 1 1 1 1 392 392 392 1 1 1 1 392 1 1 392 392 392 392 1 392 392 1 1 392 1 1 1 392 1 1 392 1 392 392 392 392 1 1 1 1 1 392 392 1 1 392 1 392 392 392 392 1 392 392 1 1 392 1 392 1 392 392 1 1 392 1 1 1 1 392 1 1 1 1 392 1 392 1 392 1 1 392 1 392 392 392 392 392 392 1 392 392 392 392 392 392 392 1 392 1 392 1 1 1 392 1 1 392 392 392 1 392 1 1 392 392 1 1 1 392 1 1 1 1 1 392 392 
+! --------------------------------------------------------
