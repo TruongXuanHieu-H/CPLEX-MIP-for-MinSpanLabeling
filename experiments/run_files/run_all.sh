@@ -8,6 +8,12 @@ scripts=(
     "abp/abp_x1.5.sh"
     "abp/abp_x0.5.sh"
     "abp/abp_x0.75.sh"
+
+    "cabp/cabp_x1.sh"
+    "cabp/cabp_x1.25.sh"
+    "cabp/cabp_x1.5.sh"
+    "cabp/cabp_x0.5.sh"
+    "cabp/cabp_x0.75.sh"
 )
 
 chmod +x "${scripts[@]}"
