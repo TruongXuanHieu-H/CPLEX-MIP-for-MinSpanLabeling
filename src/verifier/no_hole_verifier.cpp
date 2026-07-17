@@ -4,25 +4,11 @@
 
 bool NoHoleVerifier::verify(ConfigData &config_data, GraphData &graph_data, std::vector<int> &solution, int solution_span)
 {
-    for (const auto &e : graph_data.edges)
-    {
-        int diff = std::abs(solution[e.u] - solution[e.v]);
-        if (diff < config_data.target_value)
-        {
-            std::cout << "! VERIFY FAILED: edge (" << e.u << ", " << e.v << ") has distance " << diff << " < " << config_data.target_value << "\n";
-            return false;
-        }
-    }
-
-    int max_label = 0;
-    for (int v = 1; v <= graph_data.num_vertices; v++)
-        max_label = std::max(max_label, solution[v]);
-
-    if (max_label != solution_span)
-    {
-        std::cout << "! VERIFY FAILED: span = " << solution_span << ", but max label = " << max_label << "\n";
+    if (!verify_target_value(config_data, graph_data, solution, solution_span))
         return false;
-    }
+
+    if (!verify_span(graph_data, solution, solution_span))
+        return false;
 
     std::vector<bool> used(solution_span + 1, false);
     for (int v = 1; v <= graph_data.num_vertices; v++)

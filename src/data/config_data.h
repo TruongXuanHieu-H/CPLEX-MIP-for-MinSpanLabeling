@@ -10,14 +10,20 @@ enum class VerticesMode
     has_hole, // No constraints.
 };
 
+enum class TargetValueType
+{
+    abp, // Linear target
+    cabp,
+};
+
 class ConfigData
 {
 public:
     ConfigData(int argc, char *argv[])
     {
-        if (argc != 7)
+        if (argc != 8)
         {
-            std::cerr << "Usage: " << argv[0] << " instance.txt <target_value_mul> <lower_bound> <upper_bound> <time_limit> <vertices_mode>\n";
+            std::cerr << "Usage: " << argv[0] << " <graph_file_dir> <target_value> <lower_bound> <upper_bound> <time_limit> <vertices_mode> <target_value_mode>\n";
             exit(1);
         }
 
@@ -57,9 +63,25 @@ public:
             std::cerr << "! Vertices mode " << v_mode << " is undefined\n";
             exit(1);
         }
+
+        std::string t_v_type = argv[7];
+        if (t_v_type == "abp")
+        {
+            target_value_type = TargetValueType::abp;
+        }
+        else if (t_v_type == "cabp")
+        {
+            target_value_type = TargetValueType::cabp;
+        }
+        else
+        {
+            std::cerr << "! Target value type " << t_v_type << " is undefined\n";
+            exit(1);
+        }
     }
 
     std::string instance_dir;
+    TargetValueType target_value_type;
     int target_value;
     int lower_bound;
     int upper_bound;
