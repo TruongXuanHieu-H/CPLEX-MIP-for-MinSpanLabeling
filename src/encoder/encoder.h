@@ -82,8 +82,33 @@ protected:
         mip_data.init_label(config_data, graph_data);
         mip_data.init_span(config_data, graph_data);
 
-        for (int i = 1; i <= graph_data.num_vertices; i++)
-            mip_data.model.add(mip_data.span >= mip_data.label[i]);
+        switch (config_data.target_value_type)
+        {
+        case TargetValueType::abp:
+        {
+            for (int i = 1; i <= graph_data.num_vertices; i++)
+                mip_data.model.add(mip_data.span >= mip_data.label[i]);
+            break;
+        }
+        case TargetValueType::cabp:
+        {
+            IloBoolVarArray is_max(mip_data.env, graph_data.num_vertices + 1);
+            IloExpr sum(mip_data.env);
+
+            for (int i = 1; i <= graph_data.num_vertices; i++)
+            {
+                sum += is_max[i];
+                mip_data.model.add(IloIfThen(mip_data.env, is_max[i] == 1, mip_data.label[i] == mip_data.span));
+                mip_data.model.add(IloIfThen(mip_data.env, is_max[i] == 0, mip_data.label[i] <= mip_data.span - 1));
+            }
+
+            mip_data.model.add(sum >= 1);
+            sum.end();
+            break;
+        }
+        default:
+            break;
+        }
     }
 
     void link_label_and_assignment(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data)
