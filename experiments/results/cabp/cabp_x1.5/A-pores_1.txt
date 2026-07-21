@@ -1,0 +1,89 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/cabp/A-pores_1.mtx.rnd
+! Target value is set to 9
+! Lower bound is set to 10
+! Upper bound is set to 45
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 104 rows and 472 columns.
+MIP Presolve modified 30 coefficients.
+Aggregator did 502 substitutions.
+Reduced MIP has 709 rows, 606 columns, and 1785 nonzeros.
+Reduced MIP has 133 binaries, 237 generals, 0 SOSs, and 442 indicators.
+Presolve time = 0.00 sec. (2.55 ticks)
+Probing fixed 0 vars, tightened 609 bounds.
+Probing time = 0.00 sec. (1.51 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve modified 296 coefficients.
+Reduced MIP has 709 rows, 606 columns, and 1785 nonzeros.
+Reduced MIP has 133 binaries, 473 generals, 0 SOSs, and 442 indicators.
+Presolve time = 0.00 sec. (1.64 ticks)
+Probing time = 0.00 sec. (1.04 ticks)
+Clique table members: 9.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.01 sec. (1.65 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       18.0000   105                     18.0000        0         
+      0     0       18.0000    91                   Cuts: 277      112         
+      0     0       18.0000    52                   Cuts: 277      207         
+      0     0       18.0000    52                   Cuts: 180      294         
+      0     0       18.0000    67                   Cuts: 171      377         
+*     0+    0                           36.0000       18.0000            50.00%
+Detecting symmetries...
+      0     2       18.0000    56       36.0000       18.0000      377   50.00%
+Elapsed time = 0.12 sec. (73.68 ticks, tree = 0.02 MB, solutions = 1)
+   3365  1558       28.0000    39       36.0000       18.0000    24648   50.00%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve modified 356 coefficients.
+Reduced MIP has 709 rows, 606 columns, and 1785 nonzeros.
+Reduced MIP has 133 binaries, 473 generals, 0 SOSs, and 442 indicators.
+Presolve time = 0.00 sec. (1.09 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 709 rows, 606 columns, and 1785 nonzeros.
+Reduced MIP has 133 binaries, 473 generals, 0 SOSs, and 442 indicators.
+Presolve time = 0.00 sec. (1.69 ticks)
+Represolve time = 0.01 sec. (4.68 ticks)
+   3862     0       18.0000   245       36.0000      Cuts: 26    32212   50.00%
+   3862     0       19.0000   135       36.0000      Cuts: 66    32341   47.22%
+   3862     0       19.0000   315       36.0000     Cuts: 277    32579   47.22%
+   3862     0       19.0024   429       36.0000      Cuts: 79    32761   47.22%
+   3862     0       20.0000   200       36.0000     Cuts: 277    32860   44.44%
+
+Cover cuts applied:  15
+Implied bound cuts applied:  133
+Flow cuts applied:  3
+Mixed integer rounding cuts applied:  213
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  66
+
+Root node processing (before b&c):
+  Real time             =    0.12 sec. (73.39 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.63 sec. (413.86 ticks)
+  Sync time (average)   =    0.13 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.75 sec. (487.25 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 36
+! BestBound = 36
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 36
+! Labeling: 18 27 36 9 9 9 9 18 36 36 27 27 27 9 27 36 36 18 27 36 18 27 9 9 18 18 27 18 36 9 
+! --------------------------------------------------------

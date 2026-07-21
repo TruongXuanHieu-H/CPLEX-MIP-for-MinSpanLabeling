@@ -1,0 +1,110 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/cabp/C-bcspwr01.mtx.rnd
+! Target value is set to 6
+! Lower bound is set to 7
+! Upper bound is set to 19
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 49 rows and 274 columns.
+MIP Presolve modified 1475 coefficients.
+Aggregator did 298 substitutions.
+Reduced MIP has 488 rows, 1078 columns, and 3197 nonzeros.
+Reduced MIP has 816 binaries, 132 generals, 0 SOSs, and 217 indicators.
+Presolve time = 0.01 sec. (4.59 ticks)
+Probing fixed 0 vars, tightened 286 bounds.
+Probing time = 0.01 sec. (4.06 ticks)
+Tried aggregator 2 times.
+Detecting symmetries...
+MIP Presolve modified 132 coefficients.
+Aggregator did 9 substitutions.
+Reduced MIP has 479 rows, 1069 columns, and 3188 nonzeros.
+Reduced MIP has 816 binaries, 253 generals, 0 SOSs, and 217 indicators.
+Presolve time = 0.00 sec. (3.40 ticks)
+Probing fixed 10 vars, tightened 0 bounds.
+Probing time = 0.01 sec. (4.02 ticks)
+Clique table members: 2398.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.01 sec. (3.70 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       12.0000    91                     12.0000      135         
+      0     0       12.0000   108                   Cuts: 209      266         
+      0     0       12.0000    50                   Cuts: 158      332         
+      0     0       12.0000   111                   Cuts: 196      431         
+*     0+    0                           18.0000       12.0000            33.33%
+Detecting symmetries...
+      0     2       12.0000    71       18.0000       12.0000      431   33.33%
+Elapsed time = 0.30 sec. (144.67 ticks, tree = 0.02 MB, solutions = 1)
+   2432  1161       14.5000   129       18.0000       12.0000    36211   33.33%
+   4907  2086    infeasible             18.0000       12.0000    70644   33.33%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 2 rows and 86 columns.
+MIP Presolve modified 380 coefficients.
+Reduced MIP has 477 rows, 983 columns, and 2928 nonzeros.
+Reduced MIP has 730 binaries, 253 generals, 0 SOSs, and 217 indicators.
+Presolve time = 0.00 sec. (1.77 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 18 coefficients.
+Reduced MIP has 477 rows, 983 columns, and 2928 nonzeros.
+Reduced MIP has 730 binaries, 253 generals, 0 SOSs, and 217 indicators.
+Presolve time = 0.00 sec. (2.36 ticks)
+Represolve time = 0.02 sec. (11.15 ticks)
+   4993     0       12.0000   223       18.0000      Cuts: 96    81619   27.78%
+   4993     0       12.6667   325       18.0000     Cuts: 219    81852   27.78%
+   4993     0       14.0000   198       18.0000     Cuts: 219    82113   22.22%
+   4993     0       14.0000   225       18.0000     Cuts: 219    82313   22.22%
+   4993     0       14.0000   233       18.0000     Cuts: 102    82496   22.22%
+   4993     0       14.0000   178       18.0000      Cuts: 67    82619   22.22%
+   4993     0       14.0000   210       18.0000     Cuts: 219    82855   22.22%
+   4993     0       14.0000    92       18.0000      Cuts: 35    82936   22.22%
+   4993     0       14.0000   219       18.0000     Cuts: 219    83118   22.22%
+   4993     2       14.0000    52       18.0000       14.0000    83132   22.22%
+   5836   427       16.0000    50       18.0000       14.0000    94357   22.22%
+   7721  1222       14.0000   112       18.0000       14.0000   119012   22.22%
+   8743  1441       16.0000   169       18.0000       14.0000   143065   22.22%
+   9342  1326    infeasible             18.0000       15.0000   176971   16.67%
+   9665  1131    infeasible             18.0000       15.0000   209726   16.67%
+   9987  1018       16.0000   142       18.0000       15.0000   233500   16.67%
+  11190   552       16.0000   105       18.0000       16.0000   357750   11.11%
+Elapsed time = 7.37 sec. (3548.73 ticks, tree = 0.39 MB, solutions = 1)
+  13634   564       16.0000    72       18.0000       16.0000   451044   11.11%
+  16612   223    infeasible             18.0000       17.0000   547148    5.56%
+
+GUB cover cuts applied:  85
+Clique cuts applied:  16
+Cover cuts applied:  443
+Implied bound cuts applied:  315
+Flow cuts applied:  1
+Mixed integer rounding cuts applied:  46
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  21
+
+Root node processing (before b&c):
+  Real time             =    0.30 sec. (144.36 ticks)
+Parallel b&c, 8 threads:
+  Real time             =   13.73 sec. (5982.03 ticks)
+  Sync time (average)   =    4.62 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =   14.02 sec. (6126.39 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 18
+! BestBound = 18
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 18
+! Labeling: 7 16 18 7 13 17 15 9 5 18 14 11 8 3 2 3 6 1 7 10 17 1 15 12 17 7 15 9 10 1 4 13 11 10 4 10 4 16 4 
+! --------------------------------------------------------

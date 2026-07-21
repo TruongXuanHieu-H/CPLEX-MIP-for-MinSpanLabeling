@@ -1,0 +1,85 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/cabp/J-nos4.mtx.rnd
+! Target value is set to 32
+! Lower bound is set to 33
+! Upper bound is set to 100
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 250 rows and 1191 columns.
+MIP Presolve modified 99 coefficients.
+Aggregator did 1285 substitutions.
+Reduced MIP has 1780 rows, 1534 columns, and 4497 nonzeros.
+Reduced MIP has 346 binaries, 595 generals, 0 SOSs, and 1087 indicators.
+Presolve time = 0.01 sec. (8.20 ticks)
+Probing fixed 0 vars, tightened 1494 bounds.
+Probing time = 0.01 sec. (2.79 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve modified 730 coefficients.
+Reduced MIP has 1780 rows, 1534 columns, and 4497 nonzeros.
+Reduced MIP has 346 binaries, 1188 generals, 0 SOSs, and 1087 indicators.
+Presolve time = 0.01 sec. (4.31 ticks)
+Probing time = 0.00 sec. (1.80 ticks)
+Clique table members: 6.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.02 sec. (5.97 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       64.0000   250                     64.0000        0         
+      0     0       64.0000   250                   Cuts: 545      262         
+      0     0       64.0000    97                   Cuts: 545      479         
+      0     0       64.0000   109                   Cuts: 317      605         
+Detecting symmetries...
+      0     2       64.0000   109                     64.0000      605         
+Elapsed time = 0.22 sec. (137.06 ticks, tree = 0.02 MB, solutions = 0)
+*   395   266      integral     0       97.0000       64.0000     9910   34.02%
+    819   336       96.0000   107       97.0000       64.0000    21101   34.02%
+*  1691   639      integral     0       96.0000       64.0000    38205   33.33%
+   1876   299       64.0000   165       96.0000       64.0000    41491   33.33%
+   3465   371       64.0000   137       96.0000       64.0000    60883   33.33%
+   5630   467    infeasible             96.0000       64.0000    79980   33.33%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 1780 rows, 1534 columns, and 4497 nonzeros.
+Reduced MIP has 346 binaries, 1188 generals, 0 SOSs, and 1087 indicators.
+Presolve time = 0.00 sec. (2.89 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1780 rows, 1534 columns, and 4497 nonzeros.
+Reduced MIP has 346 binaries, 1188 generals, 0 SOSs, and 1087 indicators.
+Presolve time = 0.00 sec. (4.56 ticks)
+Represolve time = 0.02 sec. (12.20 ticks)
+*  7265     0      integral     0       96.0000       96.0000   100454    0.00%
+
+Cover cuts applied:  10
+Implied bound cuts applied:  1041
+Mixed integer rounding cuts applied:  16
+Gomory fractional cuts applied:  16
+
+Root node processing (before b&c):
+  Real time             =    0.21 sec. (136.30 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    2.17 sec. (1282.20 ticks)
+  Sync time (average)   =    0.78 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    2.38 sec. (1418.51 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 96
+! BestBound = 96
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 96
+! Labeling: 35 67 35 67 67 3 67 67 80 35 3 3 1 35 3 64 67 3 3 35 59 67 67 35 67 65 35 3 3 3 35 67 3 3 35 67 3 35 67 35 35 35 67 67 3 35 3 67 3 3 35 67 35 67 35 35 35 3 67 67 35 3 35 3 35 3 3 32 35 3 35 67 67 35 3 3 67 3 67 67 67 35 35 35 64 1 3 33 67 35 35 35 3 67 96 48 67 3 96 3 
+! --------------------------------------------------------

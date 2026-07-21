@@ -1,0 +1,76 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/cabp/S-sherman4.mtx.rnd
+! Target value is set to 322
+! Lower bound is set to 323
+! Upper bound is set to 683
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1344 rows and 6459 columns.
+MIP Presolve modified 545 coefficients.
+Aggregator did 6999 substitutions.
+Reduced MIP has 9682 rows, 8342 columns, and 24475 nonzeros.
+Reduced MIP has 1886 binaries, 3229 generals, 0 SOSs, and 5909 indicators.
+Presolve time = 0.06 sec. (109.28 ticks)
+Probing fixed 0 vars, tightened 8043 bounds.
+Probing time = 0.04 sec. (20.88 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve modified 4014 coefficients.
+Reduced MIP has 9682 rows, 8342 columns, and 24475 nonzeros.
+Reduced MIP has 1886 binaries, 6456 generals, 0 SOSs, and 5909 indicators.
+Presolve time = 0.03 sec. (24.52 ticks)
+Probing time = 0.04 sec. (4.53 ticks)
+Clique table members: 4044.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.19 sec. (85.87 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      644.0000  1359                    644.0000        0         
+      0     0      644.0000  1359                  Cuts: 2520     1558         
+      0     0      644.0000   579                  Cuts: 2520     3578         
+      0     0      644.0000   833                  Cuts: 2291     4765         
+*     0+    0                          683.0000      644.0000             5.71%
+Detecting symmetries...
+      0     2      644.0000   542      683.0000      644.0000     4765    5.71%
+Elapsed time = 2.37 sec. (2375.34 ticks, tree = 0.02 MB, solutions = 1)
+     15     5      644.0000   548      683.0000      644.0000     4804    5.71%
+    100    51      645.0000   713      683.0000      644.0000    15602    5.71%
+    274   218      645.0000   808      683.0000      644.0000    22696    5.71%
+    470   423      645.0000   491      683.0000      644.0000    31142    5.71%
+    650   571      645.0000  1083      683.0000      644.0000    41304    5.71%
+    876   721      645.0000   772      683.0000      644.0000    54446    5.71%
+   1141   981      645.0000    45      683.0000      644.0000    61746    5.71%
+*  1199+  987                          645.0000      644.0000             0.16%
+   1315   170    infeasible            645.0000      644.0000    68037    0.16%
+   1391    29    infeasible            645.0000      644.0000    78423    0.16%
+*  1398     2      integral     0      644.0000      644.0000    93488    0.00%
+
+Cover cuts applied:  270
+Implied bound cuts applied:  2863
+Mixed integer rounding cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    2.34 sec. (2353.80 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    2.77 sec. (2473.89 ticks)
+  Sync time (average)   =    0.78 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    5.11 sec. (4827.69 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 644
+! BestBound = 644
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 644
+! Labeling: 322 322 644 644 644 322 322 322 322 322 644 322 322 644 322 322 322 644 644 644 322 644 644 322 644 644 322 322 322 644 644 644 644 644 322 322 644 322 644 322 322 644 322 644 644 644 644 644 644 644 644 644 322 322 644 322 322 644 644 644 644 644 644 644 644 322 644 322 644 322 644 322 322 322 322 322 322 644 322 322 644 644 322 644 322 322 644 322 322 322 322 322 644 644 322 644 322 644 644 644 644 322 322 644 644 644 644 322 644 322 644 322 322 322 322 644 644 644 644 644 322 644 644 644 644 644 644 322 644 644 322 644 644 644 644 322 322 644 322 644 644 644 322 322 322 322 322 322 644 322 322 644 322 322 644 644 644 644 322 322 322 322 644 322 644 644 322 644 322 322 322 322 644 644 322 644 644 644 322 322 322 322 322 322 322 644 644 644 644 322 322 644 322 644 644 644 322 322 322 644 322 322 322 644 644 644 322 322 644 322 322 644 322 644 322 322 644 322 644 644 644 644 322 322 322 644 322 644 644 322 644 322 322 644 644 644 644 322 322 322 644 644 322 322 644 644 644 644 322 322 322 322 644 644 644 644 322 644 644 322 322 644 322 322 644 644 644 644 644 644 322 644 644 322 322 322 644 322 644 644 644 322 644 322 644 644 322 644 644 322 322 644 644 644 644 644 322 322 644 644 322 322 322 322 322 644 322 322 322 322 644 644 322 644 322 644 322 322 644 322 644 644 322 322 644 322 322 644 644 322 322 322 644 644 644 644 644 644 322 322 644 644 322 644 644 322 644 322 644 322 322 322 644 322 644 322 322 322 322 322 322 322 322 644 322 644 644 644 644 322 644 322 322 322 322 644 322 322 644 322 322 322 644 644 644 322 644 322 322 322 322 644 322 644 644 644 322 322 322 644 644 644 322 322 644 322 644 322 322 644 322 644 644 644 644 322 322 322 644 322 322 322 322 644 644 644 322 322 322 322 644 322 322 644 644 644 644 322 644 644 322 322 644 322 322 322 644 322 322 644 322 644 644 644 644 322 322 322 322 322 644 644 322 322 644 322 644 644 644 644 322 644 644 322 322 644 322 644 322 644 644 322 322 644 322 322 322 322 644 322 322 322 322 644 322 644 322 644 322 322 644 322 644 644 644 644 644 644 322 644 644 644 644 644 644 644 322 644 322 644 322 322 322 644 322 322 644 644 644 322 644 322 322 644 644 322 322 322 644 322 322 322 322 322 644 644 
+! --------------------------------------------------------

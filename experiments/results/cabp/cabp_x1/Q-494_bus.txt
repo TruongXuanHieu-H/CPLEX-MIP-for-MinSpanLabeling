@@ -1,0 +1,107 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/cabp/Q-494_bus.mtx.rnd
+! Target value is set to 164
+! Lower bound is set to 165
+! Upper bound is set to 494
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 589 rows and 3335 columns.
+MIP Presolve modified 493 coefficients.
+Aggregator did 3823 substitutions.
+Reduced MIP has 4996 rows, 4411 columns, and 12734 nonzeros.
+Reduced MIP has 1079 binaries, 1667 generals, 0 SOSs, and 2837 indicators.
+Presolve time = 0.03 sec. (40.03 ticks)
+Probing fixed 0 vars, tightened 3516 bounds.
+Probing time = 0.02 sec. (4.96 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve modified 1745 coefficients.
+Reduced MIP has 4996 rows, 4411 columns, and 12734 nonzeros.
+Reduced MIP has 1079 binaries, 3332 generals, 0 SOSs, and 2837 indicators.
+Presolve time = 0.02 sec. (13.32 ticks)
+Probing time = 0.01 sec. (1.17 ticks)
+Clique table members: 12.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.23 sec. (43.61 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      328.0000   589                    328.0000        0         
+      0     0      328.0000   587                  Cuts: 1349      596         
+      0     0      328.0000   130                  Cuts: 1349     1116         
+      0     0      328.0000   166                   Cuts: 450     1382         
+      0     0      328.0000   173               Impl Bds: 279     1555         
+*     0+    0                          494.0000      328.0000            33.60%
+      0     2      328.0000   153      494.0000      328.0000     1555   33.60%
+Elapsed time = 1.10 sec. (878.27 ticks, tree = 0.02 MB, solutions = 1)
+    339   301      493.0000    54      494.0000      328.0000     5474   33.60%
+    798   651      493.0000    26      494.0000      328.0000     7850   33.60%
+*  1092   933      integral     0      493.0000      328.0000     9215   33.47%
+   1347   434      492.0000    79      493.0000      328.0000    11132   33.47%
+   1802   844      492.0000    24      493.0000      328.0000    15734   33.47%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve modified 2731 coefficients.
+Reduced MIP has 4996 rows, 4411 columns, and 12734 nonzeros.
+Reduced MIP has 1079 binaries, 3332 generals, 0 SOSs, and 2837 indicators.
+Presolve time = 0.01 sec. (11.20 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 4996 rows, 4411 columns, and 12734 nonzeros.
+Reduced MIP has 1079 binaries, 3332 generals, 0 SOSs, and 2837 indicators.
+Presolve time = 0.02 sec. (16.51 ticks)
+Represolve time = 0.05 sec. (35.45 ticks)
+   1803     0      328.0000   787      493.0000     Cuts: 601    18353   33.47%
+   1803     0      328.0000  1328      493.0000     Cuts: 905    19306   33.47%
+   1803     0      346.2222  1624      493.0000    Cuts: 1050    20477   29.77%
+   1803     0      361.4074  1615      493.0000     Cuts: 670    20863   26.69%
+   1803     0      371.1315  1578      493.0000     Cuts: 551    21234   24.72%
+   1803     0      379.5365  1762      493.0000     Cuts: 596    21542   23.01%
+   1803     0      387.5429  1735      493.0000     Cuts: 598    21835   21.39%
+   1803     0      388.0000  1166      493.0000     Cuts: 453    22094   21.30%
+   1803     0      393.4156  1897      493.0000     Cuts: 532    22532   20.20%
+   1803     0      397.6604  1721      493.0000     Cuts: 554    22814   19.34%
+   1803     0      399.0581  1856      493.0000     Cuts: 420    23093   19.06%
+   1803     0      399.0581  1839      493.0000     Cuts: 427    23338   19.06%
+   1803     0      399.0581  1755      493.0000     Cuts: 412    23552   19.06%
+   1803     0      399.0581  1782      493.0000     Cuts: 484    23752   19.06%
+   1803     0      399.0581  1734      493.0000     Cuts: 227    24043   18.69%
+   1803     0      400.8722  1798      493.0000     Cuts: 963    24496   18.69%
+   1803     0      400.8722  1858      493.0000     Cuts: 668    24898   18.69%
+*  1803+    0                          492.0000      400.8722            18.52%
+   1803     1      442.7487  1375      492.0000      400.8722    25003   18.52%
+
+Clique cuts applied:  1
+Cover cuts applied:  46
+Implied bound cuts applied:  475
+Flow cuts applied:  4
+Mixed integer rounding cuts applied:  384
+Zero-half cuts applied:  6
+Gomory fractional cuts applied:  4
+
+Root node processing (before b&c):
+  Real time             =    1.09 sec. (876.25 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    4.20 sec. (3055.51 ticks)
+  Sync time (average)   =    0.48 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    5.30 sec. (3931.76 ticks)
+! --------------------------------------------------------
+! Solve = 1
+! Status = Optimal
+! Cplex status = Optimal
+! Obj = 492
+! BestBound = 492
+! --------------------------------------------------------
+! --------------------------------------------------------
+! Best span = 492
+! Labeling: 1 411 165 329 165 165 1 411 1 165 491 329 165 1 1 1 1 329 1 1 329 1 165 329 165 1 83 1 1 329 165 83 1 329 247 411 411 329 491 329 165 492 411 1 165 492 1 329 329 329 1 328 165 1 1 247 165 411 329 492 164 329 165 492 1 329 329 329 329 329 329 164 329 1 1 165 1 1 165 411 1 1 1 165 1 165 1 165 1 1 83 329 1 165 1 1 329 329 1 329 329 1 1 165 1 1 329 329 164 329 1 165 1 1 1 329 1 165 1 329 163 1 165 1 411 165 1 165 247 1 83 1 491 1 83 1 1 1 1 328 329 165 83 1 1 491 328 329 1 329 329 1 329 411 247 1 1 329 329 1 329 247 329 329 1 491 164 1 1 329 83 329 1 165 1 1 165 1 329 165 1 247 165 327 329 165 1 1 165 491 1 83 163 1 1 329 165 329 329 1 1 329 1 83 163 83 1 329 1 247 329 165 1 491 247 83 83 165 411 1 1 327 329 491 329 329 411 247 1 329 165 329 83 1 1 329 329 1 165 411 329 491 1 1 1 1 1 1 1 165 165 329 329 165 1 83 1 1 1 1 492 1 329 329 165 165 411 329 329 329 328 247 165 329 164 165 411 164 329 411 329 491 1 329 329 1 491 491 1 165 492 1 1 491 165 329 1 329 165 163 329 492 165 491 1 328 329 1 1 83 247 165 491 165 1 329 165 1 1 1 83 492 329 247 165 165 1 1 491 1 165 329 1 329 1 165 1 329 163 164 1 327 329 163 492 247 329 411 1 165 1 83 329 165 165 411 165 247 83 329 165 1 329 411 329 492 491 1 1 247 1 1 1 1 329 165 1 491 165 329 165 165 329 1 165 329 1 328 1 329 329 1 329 329 1 1 329 329 165 329 247 329 329 327 329 1 1 1 329 329 1 1 329 329 1 492 165 411 164 329 165 165 1 1 329 165 1 329 329 411 1 329 328 411 1 329 1 329 83 411 1 1 411 1 1 165 1 83 1 1 491 328 329 1 1 492 165 1 1 1 1 329 329 1 329 165 1 328 492 163 1 1 327 328 165 1 1 492 164 411 1 411 329 1 1 492 1 247 1 165 328 1 1 491 
+! --------------------------------------------------------
