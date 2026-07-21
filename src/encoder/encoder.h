@@ -11,7 +11,7 @@ class Encoder
 public:
     virtual ~Encoder() = default;
 
-    virtual IloModel encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data) = 0;
+    virtual void encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data) = 0;
 
 protected:
     void encode_symmetry_breaking(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data)

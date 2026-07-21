@@ -6,7 +6,7 @@
 class AllDiffEncoder : public Encoder
 {
 public:
-    IloModel encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data) override;
+    void encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data) override;
 
 private:
     void encode_all_diff(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data);

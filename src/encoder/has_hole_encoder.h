@@ -6,7 +6,7 @@
 class HasHoleEncoder : public Encoder
 {
 public:
-    IloModel encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data) override;
+    void encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data) override;
 };
 
 #endif

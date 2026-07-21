@@ -60,9 +60,9 @@ int main(int argc, char *argv[])
     MIPData mip_data(config_data, graph_data);
 
     std::unique_ptr<Encoder> encoder = get_encoder(config_data.vertices_mode);
-    IloModel model = encoder->encode_model(config_data, graph_data, mip_data);
+    encoder->encode_model(config_data, graph_data, mip_data);
 
-    IloCplex cplex(model);
+    IloCplex cplex(mip_data.model);
     cplex.setOut(std::cout);
     cplex.setParam(IloCplex::Param::TimeLimit, config_data.time_limit);
 
