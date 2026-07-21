@@ -84,17 +84,18 @@ int main(int argc, char *argv[])
 
         int solution_span = static_cast<int>(cplex.getValue(mip_data.span));
 
-        std::unique_ptr<Verifier> verifier = get_verifier(config_data.vertices_mode);
+        std::cout << "! --------------------------------------------------------\n";
+        std::cout << "! Best span = " << solution_span << "\n";
+        std::cout << "! Labeling: ";
+        for (int v = 1; v <= graph_data.num_vertices; v++)
+            std::cout << solution[v] << " ";
+        std::cout << "\n";
+        std::cout << "! --------------------------------------------------------\n";
 
+        std::unique_ptr<Verifier> verifier = get_verifier(config_data.vertices_mode);
         if (verifier->verify(config_data, graph_data, solution, solution_span))
         {
-            std::cout << "! --------------------------------------------------------\n";
-            std::cout << "! Best span = " << solution_span << "\n";
-            std::cout << "! Labeling: ";
-            for (int v = 1; v <= graph_data.num_vertices; v++)
-                std::cout << solution[v] << " ";
-            std::cout << "\n";
-            std::cout << "! --------------------------------------------------------\n";
+            std::cout << "! All verification passed\n";
         }
     }
     else
