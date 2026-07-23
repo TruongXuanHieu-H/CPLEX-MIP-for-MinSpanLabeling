@@ -67,11 +67,12 @@ int main(int argc, char *argv[])
 
     if (cplex.solve())
     {
-        std::vector<int> solution(graph_data.num_vertices + 1);
+        std::vector<int> solution(graph_data.num_vertices);
 
-        for (int v = 1; v <= graph_data.num_vertices; v++)
+        for (int v = 0; v < graph_data.num_vertices; v++)
+        {
             solution[v] = static_cast<int>(cplex.getValue(mip_data.label[v]));
-
+        }
         int solution_span = static_cast<int>(cplex.getValue(mip_data.span));
 
         std::cout << "! --------------------------------------------------------\n";
@@ -91,8 +92,10 @@ int main(int argc, char *argv[])
         }
         std::cout << "! Best span = " << solution_span << "\n";
         std::cout << "! Labeling: ";
-        for (int v = 1; v <= graph_data.num_vertices; v++)
+        for (int v = 0; v < graph_data.num_vertices; v++)
+        {
             std::cout << solution[v] << " ";
+        }
         std::cout << "\n";
         std::cout << "! --------------------------------------------------------\n";
 

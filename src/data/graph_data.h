@@ -26,7 +26,7 @@ public:
         {
             int u, v;
             fin >> u >> v;
-            edges.push_back({u, v});
+            edges.push_back({u - 1, v - 1});
         }
 
         fin.close();

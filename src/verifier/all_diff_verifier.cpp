@@ -10,9 +10,9 @@ bool AllDiffVerifier::verify(ConfigData &config_data, GraphData &graph_data, std
     if (!verify_span(graph_data, solution, solution_span))
         return false;
 
-    for (int i = 1; i <= graph_data.num_vertices; i++)
+    for (int i = 0; i < graph_data.num_vertices; i++)
     {
-        for (int j = i + 1; j <= graph_data.num_vertices; j++)
+        for (int j = i + 1; j < graph_data.num_vertices; j++)
         {
             if (solution[i] == solution[j])
             {

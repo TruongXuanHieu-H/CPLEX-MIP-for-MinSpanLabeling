@@ -10,14 +10,14 @@ bool NoHoleVerifier::verify(ConfigData &config_data, GraphData &graph_data, std:
     if (!verify_span(graph_data, solution, solution_span))
         return false;
 
-    std::vector<bool> used(solution_span + 1, false);
-    for (int v = 1; v <= graph_data.num_vertices; v++)
-        used[solution[v]] = true;
-    for (int label = 1; label <= solution_span; label++)
+    std::vector<bool> used(solution_span, false);
+    for (int v = 0; v < graph_data.num_vertices; v++)
+        used[solution[v] - 1] = true;
+    for (int label = 0; label < solution_span; label++)
     {
         if (!used[label])
         {
-            std::cout << "! VERIFY FAILED: label " << label << " is not used\n";
+            std::cout << "! VERIFY FAILED: label " << label + 1 << " is not used\n";
             return false;
         }
     }

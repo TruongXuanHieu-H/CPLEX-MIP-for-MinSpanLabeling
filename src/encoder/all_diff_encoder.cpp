@@ -15,11 +15,11 @@ IloModel AllDiffEncoder::encode_model(ConfigData &config_data, GraphData &graph_
 
 void AllDiffEncoder::encode_all_diff(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data)
 {
-    for (int j = 1; j <= config_data.upper_bound; j++)
+    for (int j = 0; j < config_data.upper_bound; j++)
     {
         IloExpr expr(mip_data.env);
 
-        for (int i = 1; i <= graph_data.num_vertices; i++)
+        for (int i = 0; i < graph_data.num_vertices; i++)
             expr += mip_data.assignment[i][j];
 
         mip_data.model.add(IloConstraint(expr <= 1));

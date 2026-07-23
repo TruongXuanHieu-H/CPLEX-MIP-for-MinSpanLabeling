@@ -52,9 +52,14 @@ protected:
 
     bool verify_span(GraphData &graph_data, std::vector<int> &solution, int solution_span)
     {
-        int max_label = 0;
-        for (int v = 1; v <= graph_data.num_vertices; v++)
+        int min_label = solution[0];
+        int max_label = solution[0];
+
+        for (int v = 1; v < graph_data.num_vertices; v++)
+        {
             max_label = std::max(max_label, solution[v]);
+            min_label = std::min(min_label, solution[v]);
+        }
 
         if (max_label != solution_span)
         {
@@ -62,6 +67,11 @@ protected:
             return false;
         }
 
+        if (min_label != 1)
+        {
+            std::cout << "! VERIFY FAILED: minimum label = " << min_label << ", while it must be 1.\n";
+            return false;
+        }
         return true;
     }
 };

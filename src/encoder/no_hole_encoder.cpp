@@ -15,14 +15,14 @@ IloModel NoHoleEncoder::encode_model(ConfigData &config_data, GraphData &graph_d
 
 void NoHoleEncoder::encode_no_hole(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data)
 {
-    for (int j = 1; j <= config_data.upper_bound; j++)
+    for (int j = 0; j < config_data.upper_bound; j++)
     {
         IloExpr assign_expr = IloExpr(mip_data.env);
 
-        for (int i = 1; i <= graph_data.num_vertices; i++)
+        for (int i = 0; i < graph_data.num_vertices; i++)
             assign_expr += mip_data.assignment[i][j];
 
-        mip_data.model.add(mip_data.span - j + 1 <= config_data.upper_bound * assign_expr);
+        mip_data.model.add(mip_data.span - j <= config_data.upper_bound * assign_expr);
         assign_expr.end();
     }
 }
