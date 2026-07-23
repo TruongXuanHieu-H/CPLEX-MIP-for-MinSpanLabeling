@@ -63,20 +63,11 @@ int main(int argc, char *argv[])
     encoder->encode_model(config_data, graph_data, mip_data);
 
     IloCplex cplex(mip_data.model);
-    cplex.setOut(std::cout);
+    cplex.setParam(IloCplex::Param::MIP::Display, 1);
     cplex.setParam(IloCplex::Param::TimeLimit, config_data.time_limit);
 
-    bool result = cplex.solve();
-    if (result)
+    if (cplex.solve())
     {
-        std::cout << "! --------------------------------------------------------\n";
-        std::cout << "! Solve = " << result << '\n';
-        std::cout << "! Status = " << cplex.getStatus() << '\n';
-        std::cout << "! Cplex status = " << cplex.getCplexStatus() << '\n';
-        std::cout << "! Obj = " << cplex.getObjValue() << '\n';
-        std::cout << "! BestBound = " << cplex.getBestObjValue() << '\n';
-        std::cout << "! --------------------------------------------------------\n";
-
         std::vector<int> solution(graph_data.num_vertices + 1);
 
         for (int v = 1; v <= graph_data.num_vertices; v++)
@@ -85,6 +76,20 @@ int main(int argc, char *argv[])
         int solution_span = static_cast<int>(cplex.getValue(mip_data.span));
 
         std::cout << "! --------------------------------------------------------\n";
+        switch (cplex.getStatus())
+        {
+        case IloAlgorithm::Optimal:
+            std::cout << "! Status: OPTIMAL\n";
+            break;
+
+        case IloAlgorithm::Feasible:
+            std::cout << "! Status: FEASIBLE (time limit or other stopping criterion reached)\n";
+            break;
+
+        default:
+            std::cout << "! Status: " << cplex.getStatus() << "\n";
+            break;
+        }
         std::cout << "! Best span = " << solution_span << "\n";
         std::cout << "! Labeling: ";
         for (int v = 1; v <= graph_data.num_vertices; v++)
@@ -101,7 +106,31 @@ int main(int argc, char *argv[])
     else
     {
         std::cout << "! --------------------------------------------------------\n";
-        std::cout << "! No feasible solution\n";
+        switch (cplex.getStatus())
+        {
+        case IloAlgorithm::Infeasible:
+            std::cout << "! Problem is INFEASIBLE\n";
+            break;
+
+        case IloAlgorithm::InfeasibleOrUnbounded:
+            std::cout << "! Problem is INFEASIBLE OR UNBOUNDED\n";
+            break;
+
+        case IloAlgorithm::Unbounded:
+            std::cout << "! Problem is UNBOUNDED\n";
+            break;
+
+        case IloAlgorithm::Unknown:
+            std::cout << "! Problem is UNKNOWN\n";
+            std::cout << "! CPLEX Status = " << cplex.getCplexStatus() << "\n";
+            break;
+
+        default:
+            std::cout << "! Solver failed.\n";
+            std::cout << "! Status = " << cplex.getStatus() << "\n";
+            std::cout << "! CPLEX status = " << cplex.getCplexStatus() << "\n";
+            break;
+        }
         std::cout << "! --------------------------------------------------------\n";
     }
 
