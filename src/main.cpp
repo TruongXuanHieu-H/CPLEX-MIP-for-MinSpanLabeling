@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
     std::unique_ptr<Encoder> encoder = get_encoder(config_data.vertices_mode);
     IloModel model = encoder->encode_model(config_data, graph_data, mip_data);
     IloCplex cplex(model);
-    cplex.setParam(IloCplex::Param::MIP::Display, 1);
+    cplex.setParam(IloCplex::Param::MIP::Display, 2);
     cplex.setParam(IloCplex::Param::TimeLimit, config_data.time_limit);
 
     if (cplex.solve())
