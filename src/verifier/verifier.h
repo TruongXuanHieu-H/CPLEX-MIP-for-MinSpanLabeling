@@ -20,7 +20,7 @@ protected:
         {
             int diff;
 
-            switch (config_data.target_value_type)
+            switch (config_data.target_value_mode)
             {
             case TargetValueMode::abp:
             {

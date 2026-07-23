@@ -37,8 +37,7 @@ protected:
     {
         mip_data.init_label(config_data, graph_data);
         mip_data.init_span(config_data, graph_data);
-
-        switch (config_data.target_value_type)
+        switch (config_data.target_value_mode)
         {
         case TargetValueMode::abp:
         {
@@ -81,8 +80,7 @@ protected:
     {
         mip_data.init_label(config_data, graph_data);
         mip_data.init_span(config_data, graph_data);
-
-        switch (config_data.target_value_type)
+        switch (config_data.target_value_mode)
         {
         case TargetValueMode::abp:
         {
