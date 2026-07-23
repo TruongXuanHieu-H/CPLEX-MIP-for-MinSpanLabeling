@@ -40,7 +40,7 @@ protected:
 
         switch (config_data.target_value_type)
         {
-        case TargetValueType::abp:
+        case TargetValueMode::abp:
         {
             for (const auto &edge : graph_data.edges)
             {
@@ -53,7 +53,7 @@ protected:
             }
             break;
         }
-        case TargetValueType::cabp:
+        case TargetValueMode::cabp:
         {
             for (const auto &edge : graph_data.edges)
             {
@@ -84,13 +84,13 @@ protected:
 
         switch (config_data.target_value_type)
         {
-        case TargetValueType::abp:
+        case TargetValueMode::abp:
         {
             for (int i = 1; i <= graph_data.num_vertices; i++)
                 mip_data.model.add(mip_data.span >= mip_data.label[i]);
             break;
         }
-        case TargetValueType::cabp:
+        case TargetValueMode::cabp:
         {
             IloBoolVarArray is_max(mip_data.env, graph_data.num_vertices + 1);
             IloExpr sum(mip_data.env);

@@ -10,10 +10,10 @@ enum class VerticesMode
     has_hole, // No constraints.
 };
 
-enum class TargetValueType
+enum class TargetValueMode
 {
-    abp, // Linear target
-    cabp,
+    abp,  // Antibandwidth
+    cabp, // Cyclic Antibandwidth
 };
 
 class ConfigData
@@ -67,11 +67,11 @@ public:
         std::string t_v_type = argv[7];
         if (t_v_type == "abp")
         {
-            target_value_type = TargetValueType::abp;
+            target_value_type = TargetValueMode::abp;
         }
         else if (t_v_type == "cabp")
         {
-            target_value_type = TargetValueType::cabp;
+            target_value_type = TargetValueMode::cabp;
         }
         else
         {
@@ -81,12 +81,12 @@ public:
     }
 
     std::string instance_dir;
-    TargetValueType target_value_type;
     int target_value;
     int lower_bound;
     int upper_bound;
     int time_limit;
     VerticesMode vertices_mode;
+    TargetValueMode target_value_type;
 };
 
 #endif

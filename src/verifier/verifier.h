@@ -22,12 +22,12 @@ protected:
 
             switch (config_data.target_value_type)
             {
-            case TargetValueType::abp:
+            case TargetValueMode::abp:
             {
                 diff = std::abs(solution[e.u] - solution[e.v]);
                 break;
             }
-            case TargetValueType::cabp:
+            case TargetValueMode::cabp:
             {
                 diff = std::min(std::abs(solution[e.u] - solution[e.v]), solution_span - std::abs(solution[e.u] - solution[e.v]));
                 break;
