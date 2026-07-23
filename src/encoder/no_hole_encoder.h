@@ -6,7 +6,7 @@
 class NoHoleEncoder : public Encoder
 {
 public:
-    void encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data) override;
+    IloModel encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data) override;
 
 private:
     void encode_no_hole(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data);

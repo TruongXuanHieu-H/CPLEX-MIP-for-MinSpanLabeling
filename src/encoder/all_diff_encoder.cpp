@@ -1,6 +1,6 @@
 #include "all_diff_encoder.h"
 
-void AllDiffEncoder::encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data)
+IloModel AllDiffEncoder::encode_model(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data)
 {
     encode_symmetry_breaking(config_data, graph_data, mip_data);
     encode_target_value(config_data, graph_data, mip_data);
@@ -9,6 +9,8 @@ void AllDiffEncoder::encode_model(ConfigData &config_data, GraphData &graph_data
     encode_all_diff(config_data, graph_data, mip_data);
 
     mip_data.model.add(IloMinimize(mip_data.env, mip_data.span));
+
+    return mip_data.model;
 }
 
 void AllDiffEncoder::encode_all_diff(ConfigData &config_data, GraphData &graph_data, MIPData &mip_data)
