@@ -5,6 +5,7 @@ IloModel HasHoleEncoder::encode_model(ConfigData &config_data, GraphData &graph_
     encode_symmetry_breaking(config_data, graph_data, mip_data);
     encode_target_value(config_data, graph_data, mip_data);
     encode_span(config_data, graph_data, mip_data);
+    link_label_and_assignment(config_data, graph_data, mip_data);
 
     mip_data.model.add(IloMinimize(mip_data.env, mip_data.span));
 
