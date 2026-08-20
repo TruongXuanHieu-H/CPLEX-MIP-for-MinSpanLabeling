@@ -71,9 +71,9 @@ int main(int argc, char *argv[])
 
         for (int v = 0; v < graph_data.num_vertices; v++)
         {
-            solution[v] = static_cast<int>(cplex.getValue(mip_data.label[v]));
+            solution[v] = static_cast<int>(std::round(cplex.getValue(mip_data.label[v])));
         }
-        int solution_span = static_cast<int>(cplex.getValue(mip_data.span));
+        int solution_span = static_cast<int>(std::round(cplex.getValue(mip_data.span)));
 
         std::cout << "! --------------------------------------------------------\n";
         switch (cplex.getStatus())
