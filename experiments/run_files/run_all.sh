@@ -3,17 +3,22 @@
 export TZ='Asia/Ho_Chi_Minh'
 
 scripts=(
-    # "abp/abp_x1.sh"
-    # "abp/abp_x1.25.sh"
-    # "abp/abp_x1.5.sh"
-    # "abp/abp_x0.5.sh"
-    # "abp/abp_x0.75.sh"
+    "abp/abp_x1.sh"
+    "abp/abp_x1.25.sh"
+    "abp/abp_x1.5.sh"
+    "abp/abp_x0.5.sh"
+    "abp/abp_x0.75.sh"
 
     "cabp/cabp_x1.sh"
     "cabp/cabp_x1.25.sh"
     "cabp/cabp_x1.5.sh"
     "cabp/cabp_x0.5.sh"
     "cabp/cabp_x0.75.sh"
+
+    "abp/abp_x0.5_has_hole.sh"
+    "abp/abp_x0.75_has_hole.sh"
+    "cabp/cabp_x0.5_has_hole.sh"
+    "cabp/cabp_x0.75_has_hole.sh"
 )
 
 chmod +x "${scripts[@]}"

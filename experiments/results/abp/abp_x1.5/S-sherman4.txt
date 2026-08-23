@@ -3,60 +3,124 @@
 ! Lower bound is set to 392
 ! Upper bound is set to 819
 ! Time limit is set to 1800
-! Vertices mode is set to Has hole
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 1 rows and 2682 columns.
-Aggregator did 2682 substitutions.
-Reduced MIP has 4569 rows, 3229 columns, and 10479 nonzeros.
-Reduced MIP has 1341 binaries, 1888 generals, 0 SOSs, and 2682 indicators.
-Presolve time = 0.02 sec. (9.04 ticks)
-Found incumbent of value 819.000000 after 0.03 sec. (19.22 ticks)
-Probing time = 0.02 sec. (1.73 ticks)
+MIP Presolve eliminated 1343 rows and 1501 columns.
+MIP Presolve modified 893922 coefficients.
+Aggregator did 4320 substitutions.
+Reduced MIP has 8914 rows, 453768 columns, and 1359841 nonzeros.
+Reduced MIP has 448652 binaries, 1888 generals, 0 SOSs, and 3228 indicators.
+Presolve time = 3.00 sec. (2324.84 ticks)
+Probing time = 1.92 sec. (721.25 ticks)
 Tried aggregator 1 time.
 Detecting symmetries...
-Reduced MIP has 4569 rows, 3229 columns, and 10479 nonzeros.
-Reduced MIP has 1341 binaries, 1888 generals, 0 SOSs, and 2682 indicators.
-Presolve time = 0.01 sec. (8.99 ticks)
-Probing time = 0.01 sec. (1.41 ticks)
-Clique table members: 28.
+Reduced MIP has 8914 rows, 453768 columns, and 1359841 nonzeros.
+Reduced MIP has 448652 binaries, 2434 generals, 0 SOSs, and 3228 indicators.
+Presolve time = 2.47 sec. (805.08 ticks)
+Probing time = 0.35 sec. (89.28 ticks)
+Clique table members: 11531.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.01 sec. (12.67 ticks)
+Root relaxation solution time = 13.35 sec. (5858.80 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                          819.0000      392.0000            52.14%
-      0     0      392.0000  1341      819.0000      392.0000     1341   52.14%
-      0     0      392.0000  2423      819.0000     Cuts: 740     2497   52.14%
-*     0+    0                          392.0000      392.0000             0.00%
-      0     0        cutoff            392.0000      392.0000     3107    0.00%
-Elapsed time = 0.43 sec. (379.28 ticks, tree = 0.01 MB, solutions = 2)
+      0     0      392.0000  1340                    392.0000        9         
+      0     0      392.0000  3625                  Cuts: 2328     7259         
+      0     0      392.0000  2905                  Cuts: 2328    26212         
+      0     0      392.0000  2778                  Cuts: 2328    52674         
+      0     0      392.0000  2926                  Cuts: 2066    86584         
+Heuristic still looking.
+Heuristic still looking.
+Detecting symmetries...
+      0     2      392.0000  2926                    392.0000    86584         
+Elapsed time = 686.74 sec. (443630.17 ticks, tree = 0.02 MB, solutions = 0)
+      1     3      392.0000  2793                    392.0000    87787         
+      2     4      392.0000  2739                    392.0000    88238         
+      3     5      392.0000  2633                    392.0000    91300         
+      4     6      392.0000  2578                    392.0000    91422         
+      5     7      392.0000  2570                    392.0000    91431         
+      6     5      392.0000  2707                    392.0000    88274         
+      7     8      392.0000  2564                    392.0000    91432         
+      8     3      392.0000  2901                    392.0000    86617         
+      9    11      392.0000  3139                    392.0000   100512         
+     10     4      392.0000  2724                    392.0000    87914         
+Elapsed time = 827.32 sec. (537336.81 ticks, tree = 0.02 MB, solutions = 0)
+     11    10      392.0000  2889                    392.0000   129290         
+     12    12      392.0000  3057                    392.0000   106357         
+     13    14      392.0000  2872                    392.0000   142933         
+     14    15      392.0000  2818                    392.0000   147590         
+     16     8      392.0000  2608                    392.0000    92574         
+     18     9      392.0000  3073                    392.0000   140894         
+     19     9      392.0000  2982                    392.0000   100179         
+     20     6      392.0000  2616                    392.0000    92388         
+     21    18      392.0000  2784                    392.0000   157299         
+     22    20      392.0000  3029                    392.0000   212662         
+Elapsed time = 966.71 sec. (617711.71 ticks, tree = 1.46 MB, solutions = 0)
+     23    15      392.0000  3064                    392.0000   152458         
+     26    23      392.0000  3068                    392.0000   213600         
+     27    21      392.0000  3132                    392.0000   223211         
+     28    13      392.0000  2863                    392.0000   124629         
+     29    19      392.0000  2642                    392.0000   161296         
+     30    24      392.0000  3002                    392.0000   218606         
+     31    22      392.0000  3107                    392.0000   229148         
+     32    22      392.0000  2974                    392.0000   243651         
+     33    19      392.0000  2983                    392.0000   194849         
+     34    24      392.0000  3013                    392.0000   268676         
+Elapsed time = 1095.21 sec. (698156.41 ticks, tree = 1.88 MB, solutions = 0)
+     37    34      392.0000  3106                    392.0000   286607         
+     38    27      392.0000  2720                    392.0000   275353         
+     39    36      392.0000  2925                    392.0000   347185         
+     42    35      392.0000  2796                    392.0000   313807         
+     43    39      392.0000  2982                    392.0000   365245         
+     45    35      392.0000  3097                    392.0000   292575         
+     46    32      392.0000  3004                    392.0000   321146         
+     47    39      392.0000  3011                    392.0000   352519         
+     48    36      392.0000  2842                    392.0000   318765         
+     49    18      392.0000  3081                    392.0000   232228         
+Elapsed time = 1281.13 sec. (789495.22 ticks, tree = 1.47 MB, solutions = 0)
+     50    43    infeasible                          392.0000   467316         
+     51    23      392.0000  3235                    392.0000   298276         
+     52    41      392.0000  2743                    392.0000   392838         
+     53    38      392.0000  2728                    392.0000   410157         
+     54    48      392.0000  3107                    392.0000   634849         
+     55    41      392.0000  2773                    392.0000   474813         
+     56    49      392.0000  3050                    392.0000   634916         
+     57    57      392.0000  3051                    392.0000   736403         
+     58    51    infeasible                          392.0000   680926         
+     59    58      392.0000  2957                    392.0000   741467         
+Elapsed time = 1687.24 sec. (982847.30 ticks, tree = 9.58 MB, solutions = 0)
+     60    40      392.0000  2837                    392.0000   457808         
+     61    58      392.0000  2870                    392.0000   763372         
+     62    56      392.0000  2908                    392.0000   759657         
+     63    55      392.0000  2741                    392.0000   759328         
+     64    59      392.0000  2838                    392.0000   828089         
+     65    47      392.0000  3101                    392.0000   608825         
+     66    59      392.0000  2841                    392.0000   763564         
+     67    52    infeasible                          392.0000   737639         
+     68    45    infeasible                          392.0000   631297         
 
-Clique cuts applied:  7
-Cover cuts applied:  101
-Implied bound cuts applied:  779
-Gomory fractional cuts applied:  216
+Clique cuts applied:  88
+Cover cuts applied:  173
+Implied bound cuts applied:  2625
+Mixed integer rounding cuts applied:  1534
+Zero-half cuts applied:  497
+Gomory fractional cuts applied:  10
 
 Root node processing (before b&c):
-  Real time             =    0.44 sec. (379.64 ticks)
+  Real time             =  675.62 sec. (436065.72 ticks)
 Parallel b&c, 8 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
+  Real time             = 1124.76 sec. (705731.10 ticks)
+  Sync time (average)   =  163.03 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.44 sec. (379.64 ticks)
+Total (root+branch&cut) = 1800.38 sec. (1141796.83 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 392
-! BestBound = 392
-! --------------------------------------------------------
-! --------------------------------------------------------
-! Best span = 392
-! Labeling: 1 1 392 392 392 1 1 1 1 1 392 1 1 392 1 1 1 392 392 392 1 392 392 1 392 392 1 1 1 392 392 392 392 392 1 1 392 1 392 1 1 392 1 392 392 392 392 392 392 392 392 392 1 1 392 1 1 392 392 392 392 392 392 392 392 1 392 1 392 1 392 1 1 1 1 1 1 392 1 1 392 392 1 392 1 1 392 1 1 1 1 1 392 392 1 392 1 392 392 392 392 1 1 392 392 392 392 1 392 1 392 1 1 1 1 392 392 392 392 392 1 392 392 392 392 392 392 1 392 392 1 392 392 392 392 1 1 392 1 392 392 392 1 1 1 1 1 1 392 1 1 392 1 1 392 392 392 392 1 1 1 1 392 1 392 392 1 392 1 1 1 1 392 392 1 392 392 392 1 1 1 1 1 1 1 392 392 392 392 1 1 392 1 392 392 392 1 1 1 392 1 1 1 392 392 392 1 1 392 1 1 392 1 392 1 1 392 1 392 392 392 392 1 1 1 392 1 392 392 1 392 1 1 392 392 392 392 1 1 1 392 392 1 1 392 392 392 392 1 1 1 1 392 392 392 392 1 392 392 1 1 392 1 1 392 392 392 392 392 392 1 392 392 1 1 1 392 1 392 392 392 1 392 1 392 392 1 392 392 1 1 392 392 392 392 392 1 1 392 392 1 1 1 1 1 392 1 1 1 1 392 392 1 392 1 392 1 1 392 1 392 392 1 1 392 1 1 392 392 1 1 1 392 392 392 392 392 392 1 1 392 392 1 392 392 1 392 1 392 1 1 1 392 1 392 1 1 1 1 1 1 1 1 392 1 392 392 392 392 1 392 1 1 1 1 392 1 1 392 1 1 1 392 392 392 1 392 1 1 1 1 392 1 392 392 392 1 1 1 392 392 392 1 1 392 1 392 1 1 392 1 392 392 392 392 1 1 1 392 1 1 1 1 392 392 392 1 1 1 1 392 1 1 392 392 392 392 1 392 392 1 1 392 1 1 1 392 1 1 392 1 392 392 392 392 1 1 1 1 1 392 392 1 1 392 1 392 392 392 392 1 392 392 1 1 392 1 392 1 392 392 1 1 392 1 1 1 1 392 1 1 1 1 392 1 392 1 392 1 1 392 1 392 392 392 392 392 392 1 392 392 392 392 392 392 392 1 392 1 392 1 1 1 392 1 1 392 392 392 1 392 1 1 392 392 1 1 1 392 1 1 1 1 1 392 392 
+! Problem is UNKNOWN
+! CPLEX Status = AbortTimeLim
 ! --------------------------------------------------------

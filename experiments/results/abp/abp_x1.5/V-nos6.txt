@@ -3,61 +3,129 @@
 ! Lower bound is set to 494
 ! Upper bound is set to 1013
 ! Time limit is set to 1800
-! Vertices mode is set to Has hole
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 1 rows and 2580 columns.
-Aggregator did 2580 substitutions.
-Reduced MIP has 4545 rows, 3256 columns, and 10380 nonzeros.
-Reduced MIP has 1290 binaries, 1966 generals, 0 SOSs, and 2580 indicators.
-Presolve time = 0.02 sec. (8.92 ticks)
-Found incumbent of value 1013.000000 after 0.03 sec. (33.59 ticks)
-Probing time = 0.01 sec. (1.32 ticks)
+MIP Presolve eliminated 1292 rows and 1856 columns.
+MIP Presolve modified 1367032 coefficients.
+Aggregator did 4605 substitutions.
+Reduced MIP has 9549 rows, 690455 columns, and 2069916 nonzeros.
+Reduced MIP has 685234 binaries, 1966 generals, 0 SOSs, and 3255 indicators.
+Presolve time = 4.65 sec. (3638.64 ticks)
+Probing time = 2.67 sec. (1009.14 ticks)
 Tried aggregator 1 time.
 Detecting symmetries...
-Reduced MIP has 4545 rows, 3256 columns, and 10380 nonzeros.
-Reduced MIP has 1290 binaries, 1966 generals, 0 SOSs, and 2580 indicators.
-Presolve time = 0.01 sec. (8.81 ticks)
-Probing time = 0.01 sec. (1.08 ticks)
-Clique table members: 12.
+Reduced MIP has 9549 rows, 690455 columns, and 2069916 nonzeros.
+Reduced MIP has 685234 binaries, 2641 generals, 0 SOSs, and 3255 indicators.
+Presolve time = 4.01 sec. (1193.80 ticks)
+Probing time = 0.51 sec. (132.15 ticks)
+Clique table members: 12135.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.02 sec. (11.94 ticks)
+Root relaxation solution time = 35.43 sec. (13105.09 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                         1013.0000      494.0000            51.23%
-      0     0      494.0000  1290     1013.0000      494.0000     1290   51.23%
-      0     0      494.0000  2499     1013.0000     Cuts: 871     2705   51.23%
-*     0+    0                          494.0000      494.0000             0.00%
-      0     0        cutoff            494.0000      494.0000     3334    0.00%
-Elapsed time = 0.37 sec. (357.55 ticks, tree = 0.01 MB, solutions = 2)
+      0     0      494.0000  1290                    494.0000       14         
+      0     0      494.0000  4111                  Cuts: 2487    10509         
+      0     0      494.0000  3127                  Cuts: 2487    42916         
+      0     0      494.0000  3099                  Cuts: 2487    52306         
+      0     0      494.0000  2967                  Cuts: 1446    62256         
+      0     0      494.0000  3160                  Cuts: 2487    92973         
+Detecting symmetries...
+Heuristic still looking.
+Heuristic still looking.
+Detecting symmetries...
+      0     2      494.0000  3160                    494.0000    92973         
+Elapsed time = 1073.62 sec. (682365.71 ticks, tree = 0.02 MB, solutions = 0)
+      1     3      494.0000  3209                    494.0000    93505         
+      2     4      494.0000  3265                    494.0000    93871         
+      3     5      494.0000  3248                    494.0000    94206         
+      4     6      494.0000  3192                    494.0000    95169         
+      5     7      494.0000  3132                    494.0000    95274         
+      6     8      494.0000  3081                    494.0000    95433         
+      7     3      494.0000  3139                    494.0000    93058         
+      8     9      494.0000  3085                    494.0000    95605         
+      9     4      494.0000  3177                    494.0000    93562         
+     10     5      494.0000  3222                    494.0000    93985         
+Elapsed time = 1182.14 sec. (734804.44 ticks, tree = 0.02 MB, solutions = 0)
+     11     8      494.0000  3046                    494.0000    95585         
+     12    10      494.0000  3267                    494.0000   104472         
+     13     6      494.0000  3211                    494.0000    94255         
+     14     9      494.0000  3108                    494.0000    96069         
+     15     7      494.0000  3124                    494.0000    95761         
+     16    11      494.0000  3100                    494.0000   115232         
+     17    13      494.0000  3193                    494.0000   113362         
+     18    12      494.0000  3168                    494.0000   118618         
+     19    15      494.0000  3226                    494.0000   151989         
+     20    14      494.0000  3098                    494.0000   122226         
+Elapsed time = 1380.29 sec. (820603.55 ticks, tree = 0.37 MB, solutions = 0)
+     21    16      494.0000  3189                    494.0000   124670         
+     22    22      494.0000  3240                    494.0000   217813         
+     24    24      494.0000  3237                    494.0000   218195         
+     25    25      494.0000  3239                    494.0000   218793         
+     28    28      494.0000  3248                    494.0000   219340         
+     29    29      494.0000  3199                    494.0000   219470         
+     30    23      494.0000  3044                    494.0000   246271         
+     31    20      494.0000  3216                    494.0000   189723         
+     36    17      494.0000  3117                    494.0000   142124         
+     37    26      494.0000  3145                    494.0000   341541         
+Elapsed time = 1514.13 sec. (879154.04 ticks, tree = 2.54 MB, solutions = 0)
+     38    19      494.0000  3269                    494.0000   196768         
+     40    29      494.0000  3124                    494.0000   311896         
+     43    30      494.0000  3032                    494.0000   477557         
+     44    27      494.0000  3144                    494.0000   345266         
+     46    30      494.0000  3117                    494.0000   263358         
+     48    38      494.0000  3065                    494.0000   527533         
+     50    24      494.0000  3197                    494.0000   318917         
+     52    40      494.0000  3092                    494.0000   529718         
+     53    41      494.0000  2927                    494.0000   529896         
+     54    42      494.0000  2928                    494.0000   530291         
+Elapsed time = 1601.44 sec. (915129.58 ticks, tree = 6.67 MB, solutions = 0)
+     56    31      494.0000  3008                    494.0000   483018         
+     60    45      494.0000  3106                    494.0000   598184         
+     61    44      494.0000  3048                    494.0000   531875         
+     63    45      494.0000  2946                    494.0000   532151         
+     65    47      494.0000  2929                    494.0000   532342         
+     67    49      494.0000  2878                    494.0000   532589         
+     69    51      494.0000  2967                    494.0000   533011         
+     73    55      494.0000  2930                    494.0000   533255         
+     77    59      494.0000  2949                    494.0000   533513         
+     80    62      494.0000  2911                    494.0000   533729         
+Elapsed time = 1641.00 sec. (930589.64 ticks, tree = 14.14 MB, solutions = 0)
+     83    18      494.0000  3124                    494.0000   155385         
+     85    48      494.0000  3114                    494.0000   612336         
+     88    39      494.0000  3017                    494.0000   595843         
+     89    27      494.0000  3214                    494.0000   412527         
+     92    52      494.0000  3223                    494.0000   656635         
+     94    54      494.0000  3143                    494.0000   656893         
+     95    24      494.0000  3144                    494.0000   323982         
+     97    55      494.0000  3014                    494.0000   665266         
+     99    65      494.0000  2909                    494.0000   534004         
+    100    33      494.0000  2900                    494.0000   543164         
+Elapsed time = 1800.36 sec. (1007567.72 ticks, tree = 4.52 MB, solutions = 0)
+    101    46      494.0000  3176                    494.0000   664675         
 
-Clique cuts applied:  3
-Cover cuts applied:  111
-Implied bound cuts applied:  979
-Lift and project cuts applied:  6
-Gomory fractional cuts applied:  202
+Clique cuts applied:  254
+Cover cuts applied:  656
+Implied bound cuts applied:  3473
+Mixed integer rounding cuts applied:  1197
+Zero-half cuts applied:  235
+Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-  Real time             =    0.37 sec. (357.91 ticks)
+  Real time             = 1059.05 sec. (672536.93 ticks)
 Parallel b&c, 8 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
+  Real time             =  741.46 sec. (339432.94 ticks)
+  Sync time (average)   =   64.59 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.37 sec. (357.91 ticks)
+Total (root+branch&cut) = 1800.51 sec. (1011969.87 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 494
-! BestBound = 494
-! --------------------------------------------------------
-! --------------------------------------------------------
-! Best span = 494
-! Labeling: 494 494 494 1 494 1 1 494 494 1 1 494 1 1 1 494 1 494 1 494 494 1 494 1 494 494 1 1 494 1 494 494 1 1 1 494 1 494 494 1 494 1 494 1 494 494 1 494 494 1 494 494 494 1 1 1 1 494 1 1 494 1 1 494 494 1 1 1 1 494 494 494 494 1 1 494 494 494 1 494 494 1 1 1 494 1 1 1 1 494 494 494 1 494 1 1 494 494 494 494 1 494 494 494 494 494 494 1 494 494 494 494 494 494 494 1 494 1 1 1 1 494 1 1 494 494 494 1 1 1 494 494 494 1 494 1 1 494 494 1 1 494 494 1 1 1 494 494 1 494 1 494 1 494 1 1 494 494 494 1 1 1 1 1 494 494 1 494 494 1 1 1 494 1 1 494 494 494 494 494 494 1 1 1 494 1 1 1 494 1 1 1 1 494 1 1 1 494 494 494 1 1 1 1 494 1 1 1 1 1 1 1 1 1 1 494 494 494 1 494 494 1 1 494 494 1 1 1 494 494 494 1 1 1 1 494 1 494 1 494 494 494 494 494 1 494 494 1 1 494 1 1 494 494 494 494 494 494 494 494 1 494 1 494 1 494 494 494 494 494 1 1 1 494 1 494 494 494 1 1 494 1 1 494 1 1 1 1 1 494 494 1 494 1 494 1 1 1 1 1 494 494 1 494 1 1 1 494 1 494 494 494 1 494 494 1 1 1 1 494 1 1 1 494 494 1 494 1 494 494 494 494 1 1 494 494 494 494 1 1 494 1 494 494 494 1 494 494 1 494 1 494 494 1 1 494 494 494 494 494 1 1 494 494 494 1 494 494 1 1 494 1 1 494 494 494 494 1 494 494 494 494 1 494 494 494 494 494 1 1 494 494 494 1 1 1 1 494 494 1 1 494 494 1 494 494 1 1 1 494 1 494 494 494 1 1 494 1 494 1 1 494 494 494 1 1 494 494 1 494 494 1 494 494 1 494 494 494 494 1 494 1 1 494 494 1 494 494 1 1 494 1 1 1 494 494 494 494 494 1 494 1 1 1 1 1 1 1 1 494 1 494 494 494 494 494 494 1 1 494 1 1 494 494 494 1 494 1 1 494 494 1 1 1 494 494 494 1 494 494 1 1 494 1 1 1 1 494 1 494 1 1 1 494 494 494 494 494 1 1 494 494 1 1 494 1 494 1 1 1 494 1 1 1 1 1 1 1 494 1 1 494 494 1 1 1 1 1 494 494 1 1 494 494 494 494 494 1 494 1 494 1 494 1 494 1 1 1 494 1 1 494 1 1 494 494 494 1 1 494 494 1 494 494 1 1 494 1 494 494 494 494 494 1 494 494 1 1 1 1 494 494 494 494 1 1 1 1 1 494 494 1 1 494 494 1 1 494 494 1 1 494 1 494 494 494 1 1 1 1 494 1 1 1 494 494 1 494 1 1 1 1 1 1 494 494 1 1 1 494 1 1 1 1 494 494 1 494 494 1 1 1 494 1 1 1 494 494 1 494 1 494 494 494 494 
+! Problem is UNKNOWN
+! CPLEX Status = AbortTimeLim
 ! --------------------------------------------------------

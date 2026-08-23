@@ -4,60 +4,62 @@
 ! Upper bound is set to 675
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 1 rows and 2580 columns.
-Aggregator did 2580 substitutions.
-Reduced MIP has 4545 rows, 3256 columns, and 10380 nonzeros.
-Reduced MIP has 1290 binaries, 1966 generals, 0 SOSs, and 2580 indicators.
-Presolve time = 0.02 sec. (8.92 ticks)
-Found incumbent of value 675.000000 after 0.03 sec. (33.59 ticks)
-Probing time = 0.02 sec. (1.32 ticks)
+MIP Presolve eliminated 1291 rows and 1687 columns.
+MIP Presolve modified 455963 coefficients.
+Aggregator did 4605 substitutions.
+Reduced MIP has 8537 rows, 462474 columns, and 930841 nonzeros.
+Reduced MIP has 457253 binaries, 1966 generals, 0 SOSs, and 3255 indicators.
+Presolve time = 1.15 sec. (2178.00 ticks)
+Probing time = 1.52 sec. (748.46 ticks)
 Tried aggregator 1 time.
 Detecting symmetries...
-Reduced MIP has 4545 rows, 3256 columns, and 10380 nonzeros.
-Reduced MIP has 1290 binaries, 1966 generals, 0 SOSs, and 2580 indicators.
-Presolve time = 0.01 sec. (8.81 ticks)
-Probing time = 0.01 sec. (1.08 ticks)
-Clique table members: 12.
+Reduced MIP has 8537 rows, 462474 columns, and 930841 nonzeros.
+Reduced MIP has 457253 binaries, 2641 generals, 0 SOSs, and 3255 indicators.
+Presolve time = 0.96 sec. (673.01 ticks)
+Probing time = 0.20 sec. (84.02 ticks)
+Clique table members: 9639.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.01 sec. (11.94 ticks)
+Root relaxation solution time = 5.78 sec. (3664.49 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                          675.0000      330.0000            51.11%
-      0     0      330.0000  1290      675.0000      330.0000     1290   51.11%
-      0     0      330.0000  2354      675.0000     Cuts: 869     2688   51.11%
+      0     0      330.0000  1292                    330.0000        9         
+      0     0      330.0000  3936                  Cuts: 2234      951         
+      0     0      330.0000  2856                  Cuts: 2234     2247         
+      0     0      330.0000  2276                  Cuts: 2234     4757         
+      0     0      330.0000  2078                  Cuts: 1712     6341         
+      0     0      330.0000  2044                   Cuts: 951     7420         
+Detecting symmetries...
+      0     0      330.0000  2002                   Cuts: 552     8075         
 *     0+    0                          330.0000      330.0000             0.00%
-      0     0        cutoff            330.0000      330.0000     3318    0.00%
-Elapsed time = 0.38 sec. (354.11 ticks, tree = 0.01 MB, solutions = 2)
+      0     0        cutoff            330.0000      330.0000     8293    0.00%
+Elapsed time = 54.84 sec. (85186.89 ticks, tree = 0.01 MB, solutions = 1)
 
-Clique cuts applied:  5
-Cover cuts applied:  99
-Implied bound cuts applied:  964
-Lift and project cuts applied:  5
-Gomory fractional cuts applied:  196
+Clique cuts applied:  204
+Cover cuts applied:  197
+Implied bound cuts applied:  2730
+Mixed integer rounding cuts applied:  1675
+Zero-half cuts applied:  649
+Gomory fractional cuts applied:  16
 
 Root node processing (before b&c):
-  Real time             =    0.38 sec. (354.47 ticks)
+  Real time             =   54.85 sec. (85206.76 ticks)
 Parallel b&c, 8 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.38 sec. (354.47 ticks)
+Total (root+branch&cut) =   54.85 sec. (85206.76 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 330
-! BestBound = 330
-! --------------------------------------------------------
-! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 330
 ! Labeling: 330 330 330 1 330 1 1 330 330 1 1 330 1 1 1 330 1 330 1 330 330 1 330 1 330 330 1 1 330 1 330 330 1 1 1 330 1 330 330 1 330 1 330 1 330 330 1 330 330 1 330 330 330 1 1 1 1 330 1 1 330 1 1 330 330 1 1 1 1 330 330 330 330 1 1 330 330 330 1 330 330 1 1 1 330 1 1 1 1 330 330 330 1 330 1 1 330 330 330 330 1 330 330 330 330 330 330 1 330 330 330 330 330 330 330 1 330 1 1 1 1 330 1 1 330 330 330 1 1 1 330 330 330 1 330 1 1 330 330 1 1 330 330 1 1 1 330 330 1 330 1 330 1 330 1 1 330 330 330 1 1 1 1 1 330 330 1 330 330 1 1 1 330 1 1 330 330 330 330 330 330 1 1 1 330 1 1 1 330 1 1 1 1 330 1 1 1 330 330 330 1 1 1 1 330 1 1 1 1 1 1 1 1 1 1 330 330 330 1 330 330 1 1 330 330 1 1 1 330 330 330 1 1 1 1 330 1 330 1 330 330 330 330 330 1 330 330 1 1 330 1 1 330 330 330 330 330 330 330 330 1 330 1 330 1 330 330 330 330 330 1 1 1 330 1 330 330 330 1 1 330 1 1 330 1 1 1 1 1 330 330 1 330 1 330 1 1 1 1 1 330 330 1 330 1 1 1 330 1 330 330 330 1 330 330 1 1 1 1 330 1 1 1 330 330 1 330 1 330 330 330 330 1 1 330 330 330 330 1 1 330 1 330 330 330 1 330 330 1 330 1 330 330 1 1 330 330 330 330 330 1 1 330 330 330 1 330 330 1 1 330 1 1 330 330 330 330 1 330 330 330 330 1 330 330 330 330 330 1 1 330 330 330 1 1 1 1 330 330 1 1 330 330 1 330 330 1 1 1 330 1 330 330 330 1 1 330 1 330 1 1 330 330 330 1 1 330 330 1 330 330 1 330 330 1 330 330 330 330 1 330 1 1 330 330 1 330 330 1 1 330 1 1 1 330 330 330 330 330 1 330 1 1 1 1 1 1 1 1 330 1 330 330 330 330 330 330 1 1 330 1 1 330 330 330 1 330 1 1 330 330 1 1 1 330 330 330 1 330 330 1 1 330 1 1 1 1 330 1 330 1 1 1 330 330 330 330 330 1 1 330 330 1 1 330 1 330 1 1 1 330 1 1 1 1 1 1 1 330 1 1 330 330 1 1 1 1 1 330 330 1 1 330 330 330 330 330 1 330 1 330 1 330 1 330 1 1 1 330 1 1 330 1 1 330 330 330 1 1 330 330 1 330 330 1 1 330 1 330 330 330 330 330 1 330 330 1 1 1 1 330 330 330 330 1 1 1 1 1 330 330 1 1 330 330 1 1 330 330 1 1 330 1 330 330 330 1 1 1 1 330 1 1 1 330 330 1 330 1 1 1 1 1 1 330 330 1 1 1 330 1 1 1 1 330 330 1 330 330 1 1 1 330 1 1 1 330 330 1 330 1 330 330 330 330 
 ! --------------------------------------------------------
+! All verification passed

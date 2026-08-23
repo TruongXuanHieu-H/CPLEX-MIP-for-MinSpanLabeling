@@ -4,62 +4,62 @@
 ! Upper bound is set to 62
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 1 rows and 118 columns.
-Aggregator did 118 substitutions.
-Reduced MIP has 226 rows, 168 columns, and 511 nonzeros.
-Reduced MIP has 59 binaries, 109 generals, 0 SOSs, and 118 indicators.
-Presolve time = 0.00 sec. (0.43 ticks)
-Found incumbent of value 62.000000 after 0.00 sec. (0.75 ticks)
-Probing time = 0.00 sec. (0.16 ticks)
-Tried aggregator 1 time.
+MIP Presolve eliminated 60 rows and 129 columns.
+MIP Presolve modified 3056 coefficients.
+Aggregator did 265 substitutions.
+Reduced MIP has 483 rows, 3391 columns, and 7104 nonzeros.
+Reduced MIP has 3115 binaries, 109 generals, 0 SOSs, and 167 indicators.
+Presolve time = 0.01 sec. (10.26 ticks)
+Probing time = 0.02 sec. (19.98 ticks)
+Tried aggregator 2 times.
 Detecting symmetries...
-Reduced MIP has 226 rows, 168 columns, and 511 nonzeros.
-Reduced MIP has 59 binaries, 109 generals, 0 SOSs, and 118 indicators.
-Presolve time = 0.00 sec. (0.43 ticks)
-Probing time = 0.00 sec. (0.16 ticks)
-Clique table members: 17.
+Aggregator did 17 substitutions.
+Reduced MIP has 466 rows, 3374 columns, and 7087 nonzeros.
+Reduced MIP has 3115 binaries, 141 generals, 0 SOSs, and 167 indicators.
+Presolve time = 0.01 sec. (8.87 ticks)
+Probing time = 0.00 sec. (2.97 ticks)
+Clique table members: 1026.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.00 sec. (0.42 ticks)
+Root relaxation solution time = 0.01 sec. (3.95 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           62.0000       27.0000            56.45%
-      0     0       27.0000    59       62.0000       27.0000       59   56.45%
-      0     0       27.0000    49       62.0000      Cuts: 36       98   56.45%
-      0     0       27.0000    27       62.0000      Cuts: 49      150   56.45%
-      0     0       27.0000    49       62.0000      Cuts: 48      186   56.45%
+      0     0       27.0000    63                     27.0000       88         
+      0     0       27.0000   149                   Cuts: 216      203         
+      0     0       27.0000   110                   Cuts: 216      286         
+      0     0       27.0000    86                   Cuts: 216      378         
+      0     0       27.0000    81                   Cuts: 129      457         
+      0     0       27.0000    88                    Cuts: 95      529         
 *     0+    0                           53.0000       27.0000            49.06%
-      0     0        cutoff             53.0000       53.0000      186    0.00%
-Elapsed time = 0.02 sec. (9.29 ticks, tree = 0.01 MB, solutions = 2)
+      0     2       27.0000    86       53.0000       27.0000      529   49.06%
+Elapsed time = 0.39 sec. (288.19 ticks, tree = 0.02 MB, solutions = 1)
 
-Clique cuts applied:  1
-Cover cuts applied:  1
-Implied bound cuts applied:  34
-Zero-half cuts applied:  1
-Gomory fractional cuts applied:  32
+Clique cuts applied:  31
+Cover cuts applied:  58
+Implied bound cuts applied:  207
+Mixed integer rounding cuts applied:  83
+Zero-half cuts applied:  48
+Lift and project cuts applied:  7
+Gomory fractional cuts applied:  23
 
 Root node processing (before b&c):
-  Real time             =    0.02 sec. (9.31 ticks)
+  Real time             =    0.38 sec. (287.43 ticks)
 Parallel b&c, 8 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
+  Real time             =    0.06 sec. (58.00 ticks)
+  Sync time (average)   =    0.03 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.02 sec. (9.31 ticks)
+Total (root+branch&cut) =    0.44 sec. (345.43 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 53
-! BestBound = 53
-! --------------------------------------------------------
-! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 53
-! Labeling: 1 1 1 1 53 27 53 1 1 27 1 1 27 1 27 1 53 1 1 27 27 27 1 27 1 53 1 27 27 1 1 27 53 27 1 1 27 1 27 27 1 1 27 1 27 27 53 1 1 
+! Labeling: 1 53 53 1 27 1 1 1 1 53 1 27 1 27 27 1 1 1 1 1 1 1 1 27 27 53 27 53 27 1 1 53 53 1 1 1 1 27 27 27 1 27 27 53 27 1 27 27 53 
 ! --------------------------------------------------------
+! All verification passed

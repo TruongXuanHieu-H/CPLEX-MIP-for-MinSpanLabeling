@@ -4,60 +4,59 @@
 ! Upper bound is set to 45
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 1 rows and 206 columns.
-Aggregator did 206 substitutions.
-Reduced MIP has 339 rows, 237 columns, and 781 nonzeros.
-Reduced MIP has 103 binaries, 134 generals, 0 SOSs, and 206 indicators.
-Presolve time = 0.00 sec. (0.64 ticks)
-Found incumbent of value 45.000000 after 0.00 sec. (1.14 ticks)
-Probing time = 0.00 sec. (0.53 ticks)
+MIP Presolve eliminated 104 rows and 82 columns.
+MIP Presolve modified 1358 coefficients.
+Aggregator did 296 substitutions.
+Reduced MIP has 564 rows, 1831 columns, and 4059 nonzeros.
+Reduced MIP has 1461 binaries, 134 generals, 0 SOSs, and 236 indicators.
+Presolve time = 0.01 sec. (5.99 ticks)
+Probing time = 0.01 sec. (7.49 ticks)
 Tried aggregator 1 time.
 Detecting symmetries...
-Reduced MIP has 339 rows, 237 columns, and 781 nonzeros.
-Reduced MIP has 103 binaries, 134 generals, 0 SOSs, and 206 indicators.
-Presolve time = 0.00 sec. (0.63 ticks)
-Probing time = 0.00 sec. (0.51 ticks)
+Reduced MIP has 564 rows, 1831 columns, and 4059 nonzeros.
+Reduced MIP has 1461 binaries, 164 generals, 0 SOSs, and 236 indicators.
+Presolve time = 0.01 sec. (3.63 ticks)
+Probing time = 0.00 sec. (2.61 ticks)
+Clique table members: 781.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.00 sec. (0.62 ticks)
+Root relaxation solution time = 0.01 sec. (2.86 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           45.0000       10.0000            77.78%
-*     0+    0                           32.0000       10.0000            68.75%
+      0     0       10.0000   105                     10.0000      103         
+      0     0       10.0000   198                   Cuts: 241      279         
+      0     0       10.0000   160                   Cuts: 241      393         
+      0     0       10.0000   207                   Cuts: 241      557         
 *     0+    0                           28.0000       10.0000            64.29%
-      0     0       10.0000   103       28.0000       10.0000      103   64.29%
-      0     0       10.0000   185       28.0000     Cuts: 177      216   64.29%
-      0     0       10.0000   197       28.0000     Cuts: 138      302   64.29%
-      0     0        cutoff             28.0000       28.0000      302    0.00%
-Elapsed time = 0.04 sec. (24.45 ticks, tree = 0.01 MB, solutions = 3)
+      0     0        cutoff             28.0000       28.0000      557    0.00%
+Elapsed time = 0.28 sec. (169.49 ticks, tree = 0.01 MB, solutions = 1)
 
-Implied bound cuts applied:  40
-Mixed integer rounding cuts applied:  1
-Lift and project cuts applied:  3
-Gomory fractional cuts applied:  20
+Clique cuts applied:  5
+Cover cuts applied:  12
+Implied bound cuts applied:  85
+Mixed integer rounding cuts applied:  61
+Zero-half cuts applied:  14
+Lift and project cuts applied:  13
+Gomory fractional cuts applied:  23
 
 Root node processing (before b&c):
-  Real time             =    0.04 sec. (24.49 ticks)
+  Real time             =    0.28 sec. (169.57 ticks)
 Parallel b&c, 8 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.04 sec. (24.49 ticks)
+Total (root+branch&cut) =    0.28 sec. (169.57 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 28
-! BestBound = 28
-! --------------------------------------------------------
-! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 28
-! Labeling: 28 19 28 10 19 10 19 28 28 1 10 19 10 10 19 1 28 1 10 1 28 19 10 10 1 28 19 1 1 19 
+! Labeling: 10 28 1 28 28 19 19 10 1 1 28 19 19 28 28 1 1 10 28 10 10 19 28 19 10 1 19 10 1 19 
 ! --------------------------------------------------------
+! All verification passed

@@ -4,60 +4,58 @@
 ! Upper bound is set to 683
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 1 rows and 2682 columns.
-Aggregator did 2682 substitutions.
-Reduced MIP has 4569 rows, 3229 columns, and 10479 nonzeros.
-Reduced MIP has 1341 binaries, 1888 generals, 0 SOSs, and 2682 indicators.
-Presolve time = 0.02 sec. (9.04 ticks)
-Found incumbent of value 683.000000 after 0.03 sec. (19.22 ticks)
-Probing time = 0.02 sec. (1.73 ticks)
+MIP Presolve eliminated 1342 rows and 1433 columns.
+MIP Presolve modified 373123 coefficients.
+Aggregator did 4320 substitutions.
+Reduced MIP has 8096 rows, 379580 columns, and 764819 nonzeros.
+Reduced MIP has 374464 binaries, 1888 generals, 0 SOSs, and 3228 indicators.
+Presolve time = 0.95 sec. (1715.45 ticks)
+Probing time = 1.31 sec. (635.73 ticks)
 Tried aggregator 1 time.
 Detecting symmetries...
-Reduced MIP has 4569 rows, 3229 columns, and 10479 nonzeros.
-Reduced MIP has 1341 binaries, 1888 generals, 0 SOSs, and 2682 indicators.
-Presolve time = 0.01 sec. (8.99 ticks)
-Probing time = 0.01 sec. (1.41 ticks)
-Clique table members: 28.
+Reduced MIP has 8096 rows, 379580 columns, and 764819 nonzeros.
+Reduced MIP has 374464 binaries, 2434 generals, 0 SOSs, and 3228 indicators.
+Presolve time = 0.79 sec. (557.74 ticks)
+Probing time = 0.16 sec. (71.24 ticks)
+Clique table members: 11654.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.02 sec. (12.67 ticks)
+Root relaxation solution time = 5.63 sec. (3465.89 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                          683.0000      327.0000            52.12%
-      0     0      327.0000  1341      683.0000      327.0000     1341   52.12%
-      0     0      327.0000  2409      683.0000     Cuts: 740     2509   52.12%
+      0     0      327.0000  1343                    327.0000        9         
+      0     0      327.0000  3404                  Cuts: 2124      930         
+      0     0      327.0000  2612                  Cuts: 2124     2168         
 *     0+    0                          327.0000      327.0000             0.00%
-      0     0        cutoff            327.0000      327.0000     3126    0.00%
-Elapsed time = 0.50 sec. (363.95 ticks, tree = 0.01 MB, solutions = 2)
+      0     0        cutoff            327.0000      327.0000     3894    0.00%
+Elapsed time = 33.87 sec. (40534.89 ticks, tree = 0.01 MB, solutions = 1)
 
-Clique cuts applied:  7
-Cover cuts applied:  130
-Implied bound cuts applied:  775
-Lift and project cuts applied:  1
-Gomory fractional cuts applied:  199
+Clique cuts applied:  80
+Cover cuts applied:  359
+Implied bound cuts applied:  2397
+Flow cuts applied:  44
+Mixed integer rounding cuts applied:  1437
+Zero-half cuts applied:  227
+Gomory fractional cuts applied:  10
 
 Root node processing (before b&c):
-  Real time             =    0.50 sec. (364.32 ticks)
+  Real time             =   33.88 sec. (40550.81 ticks)
 Parallel b&c, 8 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.50 sec. (364.32 ticks)
+Total (root+branch&cut) =   33.88 sec. (40550.81 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 327
-! BestBound = 327
-! --------------------------------------------------------
-! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 327
-! Labeling: 1 1 327 327 327 1 1 1 1 1 327 1 1 327 1 1 1 327 327 327 1 327 327 1 327 327 1 1 1 327 327 327 327 327 1 1 327 1 327 1 1 327 1 327 327 327 327 327 327 327 327 327 1 1 327 1 1 327 327 327 327 327 327 327 327 1 327 1 327 1 327 1 1 1 1 1 1 327 1 1 327 327 1 327 1 1 327 1 1 1 1 1 327 327 1 327 1 327 327 327 327 1 1 327 327 327 327 1 327 1 327 1 1 1 1 327 327 327 327 327 1 327 327 327 327 327 327 1 327 327 1 327 327 327 327 1 1 327 1 327 327 327 1 1 1 1 1 1 327 1 1 327 1 1 327 327 327 327 1 1 1 1 327 1 327 327 1 327 1 1 1 1 327 327 1 327 327 327 1 1 1 1 1 1 1 327 327 327 327 1 1 327 1 327 327 327 1 1 1 327 1 1 1 327 327 327 1 1 327 1 1 327 1 327 1 1 327 1 327 327 327 327 1 1 1 327 1 327 327 1 327 1 1 327 327 327 327 1 1 1 327 327 1 1 327 327 327 327 1 1 1 1 327 327 327 327 1 327 327 1 1 327 1 1 327 327 327 327 327 327 1 327 327 1 1 1 327 1 327 327 327 1 327 1 327 327 1 327 327 1 1 327 327 327 327 327 1 1 327 327 1 1 1 1 1 327 1 1 1 1 327 327 1 327 1 327 1 1 327 1 327 327 1 1 327 1 1 327 327 1 1 1 327 327 327 327 327 327 1 1 327 327 1 327 327 1 327 1 327 1 1 1 327 1 327 1 1 1 1 1 1 1 1 327 1 327 327 327 327 1 327 1 1 1 1 327 1 1 327 1 1 1 327 327 327 1 327 1 1 1 1 327 1 327 327 327 1 1 1 327 327 327 1 1 327 1 327 1 1 327 1 327 327 327 327 1 1 1 327 1 1 1 1 327 327 327 1 1 1 1 327 1 1 327 327 327 327 1 327 327 1 1 327 1 1 1 327 1 1 327 1 327 327 327 327 1 1 1 1 1 327 327 1 1 327 1 327 327 327 327 1 327 327 1 1 327 1 327 1 327 327 1 1 327 1 1 1 1 327 1 1 1 1 327 1 327 1 327 1 1 327 1 327 327 327 327 327 327 1 327 327 327 327 327 327 327 1 327 1 327 1 1 1 327 1 1 327 327 327 1 327 1 1 327 327 1 1 1 327 1 1 1 1 1 327 327 
+! Labeling: 327 327 1 1 1 327 327 327 327 327 1 327 327 1 327 327 327 1 1 1 327 1 1 327 1 1 327 327 327 1 1 1 1 1 327 327 1 327 1 327 327 1 327 1 1 1 1 1 1 1 1 1 327 327 1 327 327 1 1 1 1 1 1 1 1 327 1 327 1 327 1 327 327 327 327 327 327 1 327 327 1 1 327 1 327 327 1 327 327 327 327 327 1 1 327 1 327 1 1 1 1 327 327 1 1 1 1 327 1 327 1 327 327 327 327 1 1 1 1 1 327 1 1 1 1 1 1 327 1 1 327 1 1 1 1 327 327 1 327 1 1 1 327 327 327 327 327 327 1 327 327 1 327 327 1 1 1 1 327 327 327 327 1 327 1 1 327 1 327 327 327 327 1 1 327 1 1 1 327 327 327 327 327 327 327 1 1 1 1 327 327 1 327 1 1 1 327 327 327 1 327 327 327 1 1 1 327 327 1 327 327 1 327 1 327 327 1 327 1 1 1 1 327 327 327 1 327 1 1 327 1 327 327 1 1 1 1 327 327 327 1 1 327 327 1 1 1 1 327 327 327 327 1 1 1 1 327 1 1 327 327 1 327 327 1 1 1 1 1 1 327 1 1 327 327 327 1 327 1 1 1 327 1 327 1 1 327 1 1 327 327 1 1 1 1 1 327 327 1 1 327 327 327 327 327 1 327 327 327 327 1 1 327 1 327 1 327 327 1 327 1 1 327 327 1 327 327 1 1 327 327 327 1 1 1 1 1 1 327 327 1 1 327 1 1 327 1 327 1 327 327 327 1 327 1 327 327 327 327 327 327 327 327 1 327 1 1 1 1 327 1 327 327 327 327 1 327 327 1 327 327 327 1 1 1 327 1 327 327 327 327 1 327 1 1 1 327 327 327 1 1 1 327 327 1 327 1 327 327 1 327 1 1 1 1 327 327 327 1 327 327 327 327 1 1 1 327 327 327 327 1 327 327 1 1 1 1 327 1 1 327 327 1 327 327 327 1 327 327 1 327 1 1 1 1 327 327 327 327 327 1 1 327 327 1 327 1 1 1 1 327 1 1 327 327 1 327 1 327 1 1 327 327 1 327 327 327 327 1 327 327 327 327 1 327 1 327 1 327 327 1 327 1 1 1 1 1 1 327 1 1 1 1 1 1 1 327 1 327 1 327 327 327 1 327 327 1 1 1 327 1 327 327 1 1 327 327 327 1 327 327 327 327 327 1 1 
 ! --------------------------------------------------------
+! All verification passed

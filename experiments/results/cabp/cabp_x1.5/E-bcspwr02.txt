@@ -4,65 +4,84 @@
 ! Upper bound is set to 74
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 62 rows and 337 columns.
-MIP Presolve modified 48 coefficients.
-Aggregator did 380 substitutions.
-Reduced MIP has 499 rows, 441 columns, and 1269 nonzeros.
-Reduced MIP has 107 binaries, 168 generals, 0 SOSs, and 284 indicators.
-Presolve time = 0.00 sec. (1.79 ticks)
-Probing fixed 0 vars, tightened 366 bounds.
-Probing time = 0.00 sec. (0.49 ticks)
-Tried aggregator 1 time.
+MIP Presolve eliminated 62 rows and 138 columns.
+MIP Presolve modified 3637 coefficients.
+Aggregator did 262 substitutions.
+Reduced MIP has 539 rows, 3971 columns, and 8378 nonzeros.
+Reduced MIP has 3696 binaries, 109 generals, 0 SOSs, and 166 indicators.
+Presolve time = 0.01 sec. (12.06 ticks)
+Probing time = 0.03 sec. (30.16 ticks)
+Tried aggregator 2 times.
 Detecting symmetries...
-MIP Presolve modified 170 coefficients.
-Reduced MIP has 499 rows, 441 columns, and 1269 nonzeros.
-Reduced MIP has 107 binaries, 334 generals, 0 SOSs, and 284 indicators.
-Presolve time = 0.00 sec. (1.15 ticks)
-Probing time = 0.00 sec. (0.31 ticks)
-Clique table members: 6.
+Aggregator did 17 substitutions.
+Reduced MIP has 522 rows, 3954 columns, and 8361 nonzeros.
+Reduced MIP has 3696 binaries, 140 generals, 0 SOSs, and 166 indicators.
+Presolve time = 0.01 sec. (10.37 ticks)
+Probing time = 0.00 sec. (3.31 ticks)
+Clique table members: 6448.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.00 sec. (1.12 ticks)
+Root relaxation solution time = 0.01 sec. (5.27 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-      0     0       48.0000    62                     48.0000        0         
-      0     0       48.0000    62                   Cuts: 224       67         
-      0     0       48.0000    19                   Cuts: 216      120         
-      0     0       48.0000    15                    Cuts: 58      140         
-      0     0       48.0000    11                Impl Bds: 44      156         
-      0     0       48.0000    11                    Cuts: 29      172         
+      0     0       48.0000    89                     48.0000       71         
+      0     0       48.0000   132                   Cuts: 230      189         
+      0     0       48.0000   107                   Cuts: 107      280         
+      0     0       48.0000   149                   Cuts: 138      393         
 *     0+    0                           74.0000       48.0000            35.14%
-*     0+    0                           73.0000       48.0000            34.25%
-      0     2       48.0000    11       73.0000       48.0000      172   34.25%
-Elapsed time = 0.08 sec. (35.33 ticks, tree = 0.02 MB, solutions = 2)
-*    93    54      integral     0       72.0000       48.0000     1088   33.33%
+      0     2       48.0000    63       74.0000       48.0000      393   35.14%
+Elapsed time = 0.40 sec. (278.32 ticks, tree = 0.02 MB, solutions = 1)
+*   549   437      integral     0       73.0000       48.0000     3838   34.25%
+   1723   711       72.0000    50       73.0000       48.0000     9986   34.25%
 
-Cover cuts applied:  2
-Implied bound cuts applied:  216
-Gomory fractional cuts applied:  5
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 129 columns.
+MIP Presolve modified 262 coefficients.
+Reduced MIP has 522 rows, 3825 columns, and 8103 nonzeros.
+Reduced MIP has 3567 binaries, 140 generals, 0 SOSs, and 166 indicators.
+Presolve time = 0.01 sec. (7.38 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 522 rows, 3825 columns, and 8103 nonzeros.
+Reduced MIP has 3567 binaries, 140 generals, 0 SOSs, and 166 indicators.
+Presolve time = 0.01 sec. (7.59 ticks)
+Represolve time = 0.06 sec. (46.82 ticks)
+   3650     0       48.0000   170       73.0000     Cuts: 116    17234   34.25%
+   3650     0       48.0000   194       73.0000     Cuts: 159    17527   34.25%
+   3650     0       48.0000   200       73.0000     Cuts: 158    17766   34.25%
+   3650     0       48.0000   212       73.0000     Cuts: 111    17980   34.25%
+*  3650+    0                           72.0000       48.0000            33.33%
+   3650     2       48.0000   130       72.0000       48.0000    17980   33.33%
+
+GUB cover cuts applied:  16
+Clique cuts applied:  1
+Cover cuts applied:  16
+Implied bound cuts applied:  45
+Mixed integer rounding cuts applied:  43
+Zero-half cuts applied:  2
+Lift and project cuts applied:  3
+Gomory fractional cuts applied:  16
 
 Root node processing (before b&c):
-  Real time             =    0.08 sec. (35.11 ticks)
+  Real time             =    0.40 sec. (277.65 ticks)
 Parallel b&c, 8 threads:
-  Real time             =    0.03 sec. (20.12 ticks)
-  Sync time (average)   =    0.01 sec.
+  Real time             =    1.40 sec. (1044.22 ticks)
+  Sync time (average)   =    0.34 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.11 sec. (55.23 ticks)
+Total (root+branch&cut) =    1.80 sec. (1321.87 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 72
-! BestBound = 72
-! --------------------------------------------------------
-! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 72
-! Labeling: 1 61 49 24 72 1 61 24 24 25 48 71 37 1 37 1 1 1 13 24 37 47 48 48 49 61 13 48 49 13 1 37 72 48 1 71 49 24 49 24 13 37 37 71 1 25 72 1 1 
+! Labeling: 25 67 1 49 25 24 1 71 25 49 72 25 1 25 47 25 25 49 1 49 1 49 1 25 1 49 25 1 1 68 26 49 1 1 72 71 1 25 1 25 1 48 25 1 25 1 25 25 25 
 ! --------------------------------------------------------
+! All verification passed

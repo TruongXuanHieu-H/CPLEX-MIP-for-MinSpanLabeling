@@ -4,67 +4,61 @@
 ! Upper bound is set to 74
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 1 rows and 118 columns.
-Aggregator did 118 substitutions.
-Reduced MIP has 226 rows, 168 columns, and 511 nonzeros.
-Reduced MIP has 59 binaries, 109 generals, 0 SOSs, and 118 indicators.
-Presolve time = 0.00 sec. (0.43 ticks)
-Found incumbent of value 74.000000 after 0.00 sec. (0.75 ticks)
-Probing time = 0.00 sec. (0.16 ticks)
-Tried aggregator 1 time.
+MIP Presolve eliminated 60 rows and 135 columns.
+MIP Presolve modified 3638 coefficients.
+Aggregator did 265 substitutions.
+Reduced MIP has 483 rows, 3973 columns, and 8268 nonzeros.
+Reduced MIP has 3697 binaries, 109 generals, 0 SOSs, and 167 indicators.
+Presolve time = 0.01 sec. (11.66 ticks)
+Probing time = 0.05 sec. (26.86 ticks)
+Tried aggregator 2 times.
 Detecting symmetries...
-Reduced MIP has 226 rows, 168 columns, and 511 nonzeros.
-Reduced MIP has 59 binaries, 109 generals, 0 SOSs, and 118 indicators.
-Presolve time = 0.00 sec. (0.43 ticks)
-Probing time = 0.00 sec. (0.16 ticks)
-Clique table members: 17.
+Aggregator did 17 substitutions.
+Reduced MIP has 466 rows, 3956 columns, and 8251 nonzeros.
+Reduced MIP has 3697 binaries, 141 generals, 0 SOSs, and 167 indicators.
+Presolve time = 0.01 sec. (10.10 ticks)
+Probing time = 0.01 sec. (3.13 ticks)
+Clique table members: 1046.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.00 sec. (0.42 ticks)
+Root relaxation solution time = 0.01 sec. (4.45 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           74.0000       32.0000            56.76%
-      0     0       32.0000    59       74.0000       32.0000       59   56.76%
-      0     0       32.0000    49       74.0000      Cuts: 51       97   56.76%
-      0     0       32.0000    26       74.0000      Cuts: 65      149   56.76%
-      0     0       32.0000    73       74.0000      Cuts: 58      185   56.76%
-      0     0       37.2802   115       74.0000      Cuts: 26      242   49.62%
-      0     0       37.3094   119       74.0000      Cuts: 11      250   49.58%
-      0     0       37.3094   111       74.0000      Cuts: 12      255   49.58%
-      0     0       37.3094   111       74.0000       Cuts: 3      259   49.58%
-*     0+    0                           63.0000       37.3094            40.78%
-      0     0        cutoff             63.0000       63.0000      259    0.00%
-Elapsed time = 0.03 sec. (15.17 ticks, tree = 0.01 MB, solutions = 2)
+      0     0       32.0000    60                     32.0000       82         
+      0     0       32.0000   146                   Cuts: 216      208         
+      0     0       32.0000   138                   Cuts: 216      312         
+      0     0       32.0000   130                   Cuts: 203      432         
+      0     0       32.0000   142                   Cuts: 134      519         
+*     0+    0                           63.0000       32.0000            49.21%
+      0     2       32.0000    80       63.0000       32.0000      519   49.21%
+Elapsed time = 0.56 sec. (300.69 ticks, tree = 0.02 MB, solutions = 1)
 
-Clique cuts applied:  2
-Cover cuts applied:  1
-Implied bound cuts applied:  32
-Mixed integer rounding cuts applied:  1
-Zero-half cuts applied:  8
-Gomory fractional cuts applied:  24
+Clique cuts applied:  10
+Cover cuts applied:  18
+Implied bound cuts applied:  249
+Mixed integer rounding cuts applied:  91
+Zero-half cuts applied:  24
+Lift and project cuts applied:  4
+Gomory fractional cuts applied:  30
 
 Root node processing (before b&c):
-  Real time             =    0.03 sec. (15.19 ticks)
+  Real time             =    0.56 sec. (299.90 ticks)
 Parallel b&c, 8 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
+  Real time             =    0.10 sec. (58.63 ticks)
+  Sync time (average)   =    0.03 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.03 sec. (15.19 ticks)
+Total (root+branch&cut) =    0.66 sec. (358.53 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 63
-! BestBound = 63
-! --------------------------------------------------------
-! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 63
-! Labeling: 1 63 1 63 63 63 63 1 63 63 1 1 32 0 63 1 63 1 1 63 32 62 1 63 1 63 1 32 32 63 1 32 1 32 1 1 63 63 63 63 63 1 32 1 63 32 1 1 1 
+! Labeling: 1 1 1 1 63 1 1 32 1 32 1 1 1 1 32 1 63 1 1 32 1 32 1 32 1 63 32 32 32 1 63 63 63 32 1 1 32 1 32 32 1 32 32 1 63 32 63 1 63 
 ! --------------------------------------------------------
+! All verification passed

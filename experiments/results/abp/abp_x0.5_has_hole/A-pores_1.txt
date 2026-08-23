@@ -1,0 +1,91 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/A-pores_1.mtx.rnd
+! Target value is set to 3
+! Lower bound is set to 4
+! Upper bound is set to 15
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 104 rows and 67 columns.
+MIP Presolve modified 473 coefficients.
+Aggregator did 296 substitutions.
+Reduced MIP has 564 rows, 946 columns, and 2289 nonzeros.
+Reduced MIP has 576 binaries, 134 generals, 0 SOSs, and 227 indicators.
+Presolve time = 0.01 sec. (3.38 ticks)
+Probing time = 0.00 sec. (1.67 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 564 rows, 946 columns, and 2289 nonzeros.
+Reduced MIP has 576 binaries, 164 generals, 0 SOSs, and 227 indicators.
+Presolve time = 0.00 sec. (1.97 ticks)
+Probing time = 0.01 sec. (2.17 ticks)
+Clique table members: 1981.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.01 sec. (2.04 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        4.0000    77                      4.0000      103         
+      0     0        4.0000   196                   Cuts: 241      252         
+      0     0        4.0000   173                   Cuts: 241      390         
+      0     0        4.0000   196                   Cuts: 241      535         
+*     0+    0                           13.0000        4.0000            69.23%
+*     0+    0                           12.0000        5.0000            58.33%
+Detecting symmetries...
+      0     2        4.0000   124       12.0000        5.0000      535   58.33%
+Elapsed time = 0.33 sec. (124.45 ticks, tree = 0.02 MB, solutions = 2)
+*    22+    1                           11.0000        5.0000            54.55%
+*  3281  1513      integral     0       10.0000        7.0000    23174   30.00%
+   3996   510        7.0000    65       10.0000        7.0000    35476   30.00%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 174 columns.
+MIP Presolve modified 60 coefficients.
+Reduced MIP has 564 rows, 772 columns, and 1941 nonzeros.
+Reduced MIP has 402 binaries, 164 generals, 0 SOSs, and 227 indicators.
+Presolve time = 0.00 sec. (1.56 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 355 coefficients.
+Reduced MIP has 564 rows, 772 columns, and 1941 nonzeros.
+Reduced MIP has 402 binaries, 164 generals, 0 SOSs, and 227 indicators.
+Presolve time = 0.00 sec. (1.62 ticks)
+Represolve time = 0.01 sec. (5.99 ticks)
+   5010     0        4.0000   275       10.0000     Cuts: 241    53219   30.00%
+   5010     0        4.0428   306       10.0000     Cuts: 241    53516   30.00%
+   5010     0        5.0000   268       10.0000     Cuts: 241    53761   30.00%
+   5010     0        5.0000   270       10.0000     Cuts: 241    53982   30.00%
+   5010     0        5.0000   250       10.0000     Cuts: 162    54187   30.00%
+   5010     0        5.0000   275       10.0000     Cuts: 241    54403   30.00%
+   5010     2        5.0000   161       10.0000        7.0000    54403   30.00%
+
+GUB cover cuts applied:  124
+Clique cuts applied:  3
+Cover cuts applied:  28
+Implied bound cuts applied:  50
+Flow cuts applied:  1
+Mixed integer rounding cuts applied:  137
+Zero-half cuts applied:  3
+Gomory fractional cuts applied:  14
+
+Root node processing (before b&c):
+  Real time             =    0.33 sec. (124.10 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    1.81 sec. (748.26 ticks)
+  Sync time (average)   =    0.27 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    2.14 sec. (872.35 ticks)
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 10
+! Labeling: 4 7 4 1 7 1 7 10 4 10 1 7 1 1 7 4 4 10 7 4 10 7 1 1 10 10 7 10 4 1 
+! --------------------------------------------------------
+! All verification passed

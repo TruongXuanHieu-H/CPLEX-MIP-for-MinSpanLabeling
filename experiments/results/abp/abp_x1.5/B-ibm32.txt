@@ -4,65 +4,89 @@
 ! Upper bound is set to 48
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 1 rows and 180 columns.
-Aggregator did 180 substitutions.
-Reduced MIP has 302 rows, 213 columns, and 694 nonzeros.
-Reduced MIP has 90 binaries, 123 generals, 0 SOSs, and 180 indicators.
-Presolve time = 0.00 sec. (0.57 ticks)
-Found incumbent of value 48.000000 after 0.00 sec. (1.02 ticks)
-Probing time = 0.00 sec. (0.51 ticks)
+MIP Presolve eliminated 91 rows and 88 columns.
+MIP Presolve modified 1544 coefficients.
+Aggregator did 276 substitutions.
+Reduced MIP has 522 rows, 1969 columns, and 4302 nonzeros.
+Reduced MIP has 1634 binaries, 123 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.01 sec. (6.36 ticks)
+Probing time = 0.02 sec. (8.77 ticks)
 Tried aggregator 1 time.
 Detecting symmetries...
-Reduced MIP has 302 rows, 213 columns, and 694 nonzeros.
-Reduced MIP has 90 binaries, 123 generals, 0 SOSs, and 180 indicators.
-Presolve time = 0.00 sec. (0.54 ticks)
-Probing time = 0.00 sec. (0.47 ticks)
-Clique table members: 70.
+Reduced MIP has 522 rows, 1969 columns, and 4302 nonzeros.
+Reduced MIP has 1634 binaries, 155 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.01 sec. (3.86 ticks)
+Probing time = 0.01 sec. (2.66 ticks)
+Clique table members: 1000.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.00 sec. (0.55 ticks)
+Root relaxation solution time = 0.01 sec. (2.71 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           48.0000       14.0000            70.83%
+      0     0       14.0000    92                     14.0000       90         
+      0     0       14.0000   183                   Cuts: 230      254         
+      0     0       14.0000   125                   Cuts: 230      365         
+      0     0       14.0000   160                   Cuts: 230      503         
 *     0+    0                           40.0000       14.0000            65.00%
-      0     0       14.0000    90       40.0000       14.0000       90   65.00%
-      0     0       14.0000   101       40.0000     Cuts: 175      197   65.00%
-      0     0       14.3680   196       40.0000     Cuts: 165      306   64.08%
-      0     0       15.1035   187       40.0000      Cuts: 74      362   62.24%
-      0     0       15.6569   185       40.0000      Cuts: 30      392   60.86%
-      0     0       15.6569   176       40.0000      Cuts: 23      406   60.86%
 Detecting symmetries...
-      0     0       15.6569   182       40.0000      Cuts: 13      416   60.86%
-      0     0        cutoff             40.0000       40.0000      416    0.00%
-Elapsed time = 0.04 sec. (23.39 ticks, tree = 0.01 MB, solutions = 2)
+      0     2       14.0000   111       40.0000       27.0000      503   32.50%
+Elapsed time = 0.42 sec. (169.83 ticks, tree = 0.02 MB, solutions = 1)
+   2796  1113       27.0000    53       40.0000       27.0000    23825   32.50%
+   4950  1807       28.0000    97       40.0000       27.0000    49560   32.50%
 
-Cover cuts applied:  1
-Implied bound cuts applied:  48
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 301 columns.
+MIP Presolve modified 124 coefficients.
+Reduced MIP has 522 rows, 1668 columns, and 3700 nonzeros.
+Reduced MIP has 1333 binaries, 155 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.00 sec. (2.52 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 250 coefficients.
+Reduced MIP has 522 rows, 1668 columns, and 3700 nonzeros.
+Reduced MIP has 1333 binaries, 155 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.00 sec. (3.35 ticks)
+Represolve time = 0.03 sec. (14.01 ticks)
+   5196     0       14.0000   237       40.0000     Cuts: 230    57465   32.50%
+   5196     0       14.0000   261       40.0000     Cuts: 230    57713   32.50%
+   5196     0       14.0000   245       40.0000     Cuts: 230    57944   32.50%
+   5196     0       14.0000   262       40.0000     Cuts: 230    58164   32.50%
+   5196     0       14.0000   160       40.0000     Cuts: 177    58342   32.50%
+   5196     0       14.0000   237       40.0000     Cuts: 230    58686   32.50%
+   5196     2       14.0000   122       40.0000       27.0000    58686   32.50%
+   6298   200    infeasible             40.0000       27.0000    69519   32.50%
+   7506   380        cutoff             40.0000       27.0000    91787   32.50%
+   9122    25    infeasible             40.0000       34.0000   119424   15.00%
+
+GUB cover cuts applied:  83
+Clique cuts applied:  9
+Cover cuts applied:  158
+Implied bound cuts applied:  100
+Mixed integer rounding cuts applied:  138
 Zero-half cuts applied:  4
-Gomory fractional cuts applied:  16
+Lift and project cuts applied:  3
+Gomory fractional cuts applied:  39
 
 Root node processing (before b&c):
-  Real time             =    0.04 sec. (23.42 ticks)
+  Real time             =    0.42 sec. (169.34 ticks)
 Parallel b&c, 8 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
+  Real time             =    3.96 sec. (1659.62 ticks)
+  Sync time (average)   =    0.63 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.04 sec. (23.42 ticks)
+Total (root+branch&cut) =    4.38 sec. (1828.96 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 40
-! BestBound = 40
-! --------------------------------------------------------
-! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 40
-! Labeling: 14 1 14 40 1 40 27 14 14 1 14 27 27 1 1 1 40 14 1 40 14 27 40 14 27 27 40 1 14 27 40 27 
+! Labeling: 27 14 40 14 40 27 1 27 1 40 14 1 1 14 1 14 1 40 14 14 27 1 1 27 1 1 27 1 14 27 1 40 
 ! --------------------------------------------------------
+! All verification passed

@@ -1,0 +1,89 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/abp/B-ibm32.mtx.rnd
+! Target value is set to 6
+! Lower bound is set to 7
+! Upper bound is set to 24
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 91 rows and 76 columns.
+MIP Presolve modified 788 coefficients.
+Aggregator did 276 substitutions.
+Reduced MIP has 522 rows, 1213 columns, and 2790 nonzeros.
+Reduced MIP has 878 binaries, 123 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.01 sec. (4.14 ticks)
+Probing time = 0.01 sec. (3.19 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 522 rows, 1213 columns, and 2790 nonzeros.
+Reduced MIP has 878 binaries, 155 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.00 sec. (2.38 ticks)
+Probing time = 0.00 sec. (2.20 ticks)
+Clique table members: 1298.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.01 sec. (2.04 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        7.0000    92                      7.0000       90         
+      0     0        7.0000   172                   Cuts: 230      251         
+      0     0        7.0000   152                   Cuts: 230      391         
+      0     0        7.0000   175                   Cuts: 230      518         
+*     0+    0                           19.0000        7.0000            63.16%
+Detecting symmetries...
+      0     2        7.0000    81       19.0000       13.0000      518   31.58%
+Elapsed time = 0.30 sec. (115.46 ticks, tree = 0.02 MB, solutions = 1)
+   3558  2054       17.0000    17       19.0000       13.0000    31342   31.58%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 186 columns.
+MIP Presolve modified 133 coefficients.
+Reduced MIP has 522 rows, 1027 columns, and 2418 nonzeros.
+Reduced MIP has 692 binaries, 155 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.00 sec. (1.57 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 250 coefficients.
+Reduced MIP has 522 rows, 1027 columns, and 2418 nonzeros.
+Reduced MIP has 692 binaries, 155 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.00 sec. (2.14 ticks)
+Represolve time = 0.01 sec. (7.36 ticks)
+   3638     0        7.0000   249       19.0000     Cuts: 230    34409   31.58%
+   3638     0        7.0582   294       19.0000     Cuts: 230    34735   31.58%
+   3638     0        8.0000   266       19.0000     Cuts: 230    34943   31.58%
+   3638     0        8.0000   274       19.0000     Cuts: 230    35156   31.58%
+   3638     0        8.0000   259       19.0000     Cuts: 230    35459   31.58%
+   3638     0        8.0000   265       19.0000     Cuts: 230    35677   31.58%
+   3638     2        8.0000   215       19.0000       13.0000    35677   31.58%
+
+GUB cover cuts applied:  145
+Clique cuts applied:  4
+Cover cuts applied:  33
+Implied bound cuts applied:  92
+Flow cuts applied:  1
+Mixed integer rounding cuts applied:  100
+Zero-half cuts applied:  3
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  27
+
+Root node processing (before b&c):
+  Real time             =    0.29 sec. (115.06 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    1.78 sec. (823.99 ticks)
+  Sync time (average)   =    0.30 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    2.07 sec. (939.05 ticks)
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 19
+! Labeling: 13 7 7 7 7 13 1 13 1 13 7 1 1 7 7 7 1 13 7 19 13 1 1 13 1 1 1 1 19 13 1 19 
+! --------------------------------------------------------
+! All verification passed

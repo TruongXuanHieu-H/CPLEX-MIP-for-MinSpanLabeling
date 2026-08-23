@@ -4,65 +4,87 @@
 ! Upper bound is set to 40
 ! Time limit is set to 1800
 ! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
 Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
 CPXPARAM_TimeLimit                               1800
 Tried aggregator 2 times.
-MIP Presolve eliminated 1 rows and 180 columns.
-Aggregator did 180 substitutions.
-Reduced MIP has 302 rows, 213 columns, and 694 nonzeros.
-Reduced MIP has 90 binaries, 123 generals, 0 SOSs, and 180 indicators.
-Presolve time = 0.00 sec. (0.57 ticks)
-Found incumbent of value 40.000000 after 0.00 sec. (1.02 ticks)
-Probing time = 0.00 sec. (0.51 ticks)
+MIP Presolve eliminated 91 rows and 84 columns.
+MIP Presolve modified 1292 coefficients.
+Aggregator did 276 substitutions.
+Reduced MIP has 522 rows, 1717 columns, and 3798 nonzeros.
+Reduced MIP has 1382 binaries, 123 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.01 sec. (5.58 ticks)
+Probing time = 0.01 sec. (6.63 ticks)
 Tried aggregator 1 time.
 Detecting symmetries...
-Reduced MIP has 302 rows, 213 columns, and 694 nonzeros.
-Reduced MIP has 90 binaries, 123 generals, 0 SOSs, and 180 indicators.
-Presolve time = 0.00 sec. (0.54 ticks)
-Probing time = 0.00 sec. (0.47 ticks)
-Clique table members: 70.
+Reduced MIP has 522 rows, 1717 columns, and 3798 nonzeros.
+Reduced MIP has 1382 binaries, 155 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.00 sec. (3.34 ticks)
+Probing time = 0.00 sec. (2.56 ticks)
+Clique table members: 1038.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 0.00 sec. (0.55 ticks)
+Root relaxation solution time = 0.01 sec. (2.49 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           40.0000       12.0000            70.00%
+      0     0       12.0000    92                     12.0000       90         
+      0     0       12.0000   178                   Cuts: 230      250         
+      0     0       12.0000   125                   Cuts: 230      368         
+      0     0       12.0000   151                   Cuts: 230      525         
 *     0+    0                           34.0000       12.0000            64.71%
-      0     0       12.0000    90       34.0000       12.0000       90   64.71%
-      0     0       12.0000   101       34.0000     Cuts: 175      195   64.71%
-      0     0       12.3230   173       34.0000     Cuts: 101      268   63.76%
-      0     0       12.9426   164       34.0000      Cuts: 75      322   61.93%
-      0     0       13.4070   177       34.0000      Cuts: 41      361   60.57%
-      0     0       13.4070   180       34.0000      Cuts: 36      388   60.57%
 Detecting symmetries...
-      0     0        cutoff             34.0000       34.0000      388    0.00%
-Elapsed time = 0.04 sec. (22.94 ticks, tree = 0.01 MB, solutions = 2)
+      0     2       12.0000    75       34.0000       23.0000      525   32.35%
+Elapsed time = 0.26 sec. (132.80 ticks, tree = 0.02 MB, solutions = 1)
+   2764  1784       27.0000    24       34.0000       23.0000    25374   32.35%
 
-Cover cuts applied:  1
-Implied bound cuts applied:  43
-Mixed integer rounding cuts applied:  2
-Zero-half cuts applied:  7
-Gomory fractional cuts applied:  19
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 239 columns.
+MIP Presolve modified 107 coefficients.
+Reduced MIP has 522 rows, 1478 columns, and 3320 nonzeros.
+Reduced MIP has 1143 binaries, 155 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.00 sec. (2.21 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 250 coefficients.
+Reduced MIP has 522 rows, 1478 columns, and 3320 nonzeros.
+Reduced MIP has 1143 binaries, 155 generals, 0 SOSs, and 212 indicators.
+Presolve time = 0.00 sec. (2.98 ticks)
+Represolve time = 0.02 sec. (11.62 ticks)
+   3568     0       12.0000   200       34.0000     Cuts: 230    33163   32.35%
+   3568     0       12.0000   175       34.0000     Cuts: 154    33333   32.35%
+   3568     0       12.0000   233       34.0000     Cuts: 230    33602   32.35%
+   3568     0       12.0000   270       34.0000     Cuts: 230    33913   32.35%
+   3568     0       12.0000   251       34.0000     Cuts: 230    34267   32.35%
+   3568     0       12.0000   265       34.0000     Cuts: 230    34488   32.35%
+   3568     2       12.0000   136       34.0000       23.0000    34488   32.35%
+   4171    46       12.1493   263       34.0000       23.0000    38252   32.35%
+
+GUB cover cuts applied:  82
+Clique cuts applied:  7
+Cover cuts applied:  48
+Implied bound cuts applied:  46
+Flow cuts applied:  1
+Mixed integer rounding cuts applied:  127
+Zero-half cuts applied:  3
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  33
 
 Root node processing (before b&c):
-  Real time             =    0.04 sec. (22.96 ticks)
+  Real time             =    0.23 sec. (132.34 ticks)
 Parallel b&c, 8 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
+  Real time             =    1.41 sec. (1015.48 ticks)
+  Sync time (average)   =    0.35 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.04 sec. (22.96 ticks)
+Total (root+branch&cut) =    1.64 sec. (1147.82 ticks)
 ! --------------------------------------------------------
-! Solve = 1
-! Status = Optimal
-! Cplex status = Optimal
-! Obj = 34
-! BestBound = 34
-! --------------------------------------------------------
-! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 34
-! Labeling: 12 1 12 34 1 34 23 12 12 1 12 23 23 1 1 1 34 12 1 34 12 23 34 12 23 23 34 1 12 23 34 23 
+! Labeling: 23 12 34 12 12 1 1 23 1 23 12 1 1 12 12 12 1 23 34 1 23 1 1 23 1 34 1 1 34 23 1 12 
 ! --------------------------------------------------------
+! All verification passed
