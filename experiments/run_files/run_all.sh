@@ -15,10 +15,10 @@ scripts=(
     "cabp/cabp_x0.5.sh"
     "cabp/cabp_x0.75.sh"
 
-    "abp/abp_x0.5_has_hole.sh"
-    "abp/abp_x0.75_has_hole.sh"
-    "cabp/cabp_x0.5_has_hole.sh"
-    "cabp/cabp_x0.75_has_hole.sh"
+    "abp/abp_x0.5_no_hole.sh"
+    "abp/abp_x0.75_no_hole.sh"
+    "cabp/cabp_x0.5_no_hole.sh"
+    "cabp/cabp_x0.75_no_hole.sh"
 )
 
 chmod +x "${scripts[@]}"
