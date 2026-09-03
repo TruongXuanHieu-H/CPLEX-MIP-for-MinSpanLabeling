@@ -13,20 +13,20 @@ MIP Presolve modified 438575 coefficients.
 Aggregator did 3798 substitutions.
 Reduced MIP has 7842 rows, 443524 columns, and 893562 nonzeros.
 Reduced MIP has 439481 binaries, 1569 generals, 0 SOSs, and 2474 indicators.
-Presolve time = 1.81 sec. (1928.14 ticks)
-Probing time = 2.22 sec. (743.64 ticks)
+Presolve time = 1.80 sec. (1928.14 ticks)
+Probing time = 2.19 sec. (743.64 ticks)
 Tried aggregator 2 times.
 Detecting symmetries...
 Aggregator did 76 substitutions.
 Reduced MIP has 7766 rows, 443448 columns, and 893486 nonzeros.
 Reduced MIP has 439481 binaries, 2155 generals, 0 SOSs, and 2474 indicators.
-Presolve time = 2.18 sec. (836.14 ticks)
-Probing time = 0.54 sec. (88.76 ticks)
+Presolve time = 2.15 sec. (836.14 ticks)
+Probing time = 0.34 sec. (88.76 ticks)
 Clique table members: 106779.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 8 threads.
-Root relaxation solution time = 9.91 sec. (4491.13 ticks)
+Root relaxation solution time = 11.66 sec. (4491.13 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
@@ -36,7 +36,7 @@ Root relaxation solution time = 9.91 sec. (4491.13 ticks)
       0     0      330.0000  1740                  Cuts: 2031     2979         
       0     0      330.0000  1875                  Cuts: 2041     4911         
       0     2      330.0000  1567                    330.0000     4911         
-Elapsed time = 102.23 sec. (73320.14 ticks, tree = 0.02 MB, solutions = 0)
+Elapsed time = 100.71 sec. (73320.14 ticks, tree = 0.02 MB, solutions = 0)
       3     5      330.0000  1492                    330.0000     4941         
       8    10      330.0000  1468                    330.0000     4954         
      11     3      330.0000  1561                    330.0000     4914         
@@ -47,7 +47,7 @@ Elapsed time = 102.23 sec. (73320.14 ticks, tree = 0.02 MB, solutions = 0)
     117    90      330.0000  1503                    330.0000    12552         
     157   115      330.0000  1530                    330.0000    12847         
     270   256      330.0000  1473                    330.0000    19765         
-Elapsed time = 109.50 sec. (76524.78 ticks, tree = 31.15 MB, solutions = 0)
+Elapsed time = 107.17 sec. (76524.78 ticks, tree = 31.15 MB, solutions = 0)
     361   354      495.0000  1338                    330.0000    28123         
     458   436      495.0000  1316                    330.0000    40262         
     559   513      495.0000  1319                    330.0000    41482         
@@ -58,7 +58,7 @@ Elapsed time = 109.50 sec. (76524.78 ticks, tree = 31.15 MB, solutions = 0)
     995   845      496.0000  1195                    330.0000    49175         
    1134   999      496.0000  1157                    330.0000    50774         
    1203  1118      496.0000  1113                    330.0000    51904         
-Elapsed time = 132.76 sec. (86153.22 ticks, tree = 224.69 MB, solutions = 0)
+Elapsed time = 129.24 sec. (86153.22 ticks, tree = 224.69 MB, solutions = 0)
    1210  1167      496.0000  1093                    330.0000    52416         
    1224  1216      659.0000  1070                    330.0000    54744         
    1238  1221      496.0000  1144                    330.0000    55143         
@@ -69,7 +69,7 @@ Elapsed time = 132.76 sec. (86153.22 ticks, tree = 224.69 MB, solutions = 0)
    1611  1452      661.0000  1029                    330.0000    64818         
    1717  1499      662.0000   882                    330.0000    64338         
    1826  1666      661.0000  1034                    330.0000    73232         
-Elapsed time = 179.41 sec. (102936.44 ticks, tree = 354.52 MB, solutions = 0)
+Elapsed time = 175.72 sec. (102936.44 ticks, tree = 354.52 MB, solutions = 0)
    1949  1698      496.0000  1059                    330.0000    75421         
    2034  1780      496.0000  1098                    330.0000    81245         
    2125  1921      662.0000   895                    330.0000    85342         
@@ -80,7 +80,7 @@ Elapsed time = 179.41 sec. (102936.44 ticks, tree = 354.52 MB, solutions = 0)
    2576  2246      496.0000   983                    330.0000    99092         
    2700  2413      496.0000  1018                    330.0000   108511         
    2831  2497      662.0000   834                    330.0000   109833         
-Elapsed time = 197.60 sec. (112508.85 ticks, tree = 550.50 MB, solutions = 0)
+Elapsed time = 193.93 sec. (112508.85 ticks, tree = 550.50 MB, solutions = 0)
    2948  2513      496.0000  1032                    330.0000   111414         
    3052  2594      662.0000   683                    330.0000   114630         
    3161  2707    infeasible                          330.0000   120414         
@@ -91,7 +91,7 @@ Elapsed time = 197.60 sec. (112508.85 ticks, tree = 550.50 MB, solutions = 0)
    3719  2940    infeasible                          330.0000   129329         
    3815  2996      495.0000  1297                    330.0000   130543         
    3909  3110      662.0000   630                    330.0000   135082         
-Elapsed time = 218.83 sec. (122091.82 ticks, tree = 694.06 MB, solutions = 0)
+Elapsed time = 215.88 sec. (122091.82 ticks, tree = 694.06 MB, solutions = 0)
    4013  3156      495.0000  1337                    330.0000   139133         
    4110  3234      496.0000  1218                    330.0000   140350         
    4227  3250      662.0000   615                    330.0000   140237         
@@ -102,7 +102,7 @@ Elapsed time = 218.83 sec. (122091.82 ticks, tree = 694.06 MB, solutions = 0)
    4891  3609      496.0000   934                    330.0000   149717         
    5007  3677      654.0000   992                    330.0000   153637         
    5120  3733      496.0000  1201                    330.0000   156508         
-Elapsed time = 237.90 sec. (131694.30 ticks, tree = 838.41 MB, solutions = 0)
+Elapsed time = 235.07 sec. (131694.30 ticks, tree = 838.41 MB, solutions = 0)
    5245  3758      496.0000  1184                    330.0000   157577         
    5363  3841      662.0000   615                    330.0000   161746         
    5457  3841      662.0000   615                    330.0000   161764         
@@ -113,7 +113,7 @@ Elapsed time = 237.90 sec. (131694.30 ticks, tree = 838.41 MB, solutions = 0)
    6081  4032    infeasible                          330.0000   169939         
    6205  4103      662.0000   613                    330.0000   172332         
    6338  4125      496.0000   933                    330.0000   174329         
-Elapsed time = 256.56 sec. (141307.11 ticks, tree = 928.35 MB, solutions = 0)
+Elapsed time = 253.60 sec. (141307.11 ticks, tree = 928.35 MB, solutions = 0)
    6475  4198      647.0000  1213                    330.0000   177963         
    6614  4249      496.0000  1202                    330.0000   181104         
    6769  4249    infeasible                          330.0000   181122         
@@ -124,7 +124,7 @@ Elapsed time = 256.56 sec. (141307.11 ticks, tree = 928.35 MB, solutions = 0)
    7516  4435    infeasible                          330.0000   191419         
    7657  4481      496.0000  1182                    330.0000   192882         
    7807  4504    infeasible                          330.0000   194374         
-Elapsed time = 273.10 sec. (150906.25 ticks, tree = 1015.22 MB, solutions = 0)
+Elapsed time = 270.71 sec. (150906.25 ticks, tree = 1015.22 MB, solutions = 0)
    7960  4608      496.0000  1143                    330.0000   195637         
    8105  4690    infeasible                          330.0000   198104         
    8277  4731      496.0000  1180                    330.0000   201728         
@@ -135,7 +135,7 @@ Elapsed time = 273.10 sec. (150906.25 ticks, tree = 1015.22 MB, solutions = 0)
    8963  4886    infeasible                          330.0000   211055         
    9087  4955    infeasible                          330.0000   215651         
    9229  4967      496.0000  1135                    330.0000   216117         
-Elapsed time = 288.44 sec. (160507.99 ticks, tree = 1119.14 MB, solutions = 0)
+Elapsed time = 286.46 sec. (160507.99 ticks, tree = 1119.14 MB, solutions = 0)
    9372  5047      496.0000   990                    330.0000   219966         
    9523  5081      662.0000   602                    330.0000   221254         
    9687  5079      496.0000   933                    330.0000   221687         
@@ -146,7 +146,7 @@ Elapsed time = 288.44 sec. (160507.99 ticks, tree = 1119.14 MB, solutions = 0)
   10390  5325      662.0000   560                    330.0000   232983         
   10528  5365      496.0000  1171                    330.0000   234392         
   11123  5499      496.0000  1163                    330.0000   236956         
-Elapsed time = 308.63 sec. (172979.69 ticks, tree = 1242.25 MB, solutions = 0)
+Elapsed time = 306.11 sec. (172979.69 ticks, tree = 1242.25 MB, solutions = 0)
   11742  5724      496.0000   902                    330.0000   243376         
   12292  5880      496.0000  1084                    330.0000   248504         
   12909  6134      496.0000  1135                    330.0000   252280         
@@ -157,7 +157,7 @@ Elapsed time = 308.63 sec. (172979.69 ticks, tree = 1242.25 MB, solutions = 0)
   15878  7107    infeasible                          330.0000   281701         
   16462  7412      495.0000  1307                    330.0000   289840         
   17078  7600      602.0000   858                    330.0000   297337         
-Elapsed time = 373.26 sec. (211210.59 ticks, tree = 1724.86 MB, solutions = 0)
+Elapsed time = 369.63 sec. (211210.59 ticks, tree = 1724.86 MB, solutions = 0)
   17602  7873      496.0000   841                    330.0000   309987         
   18104  8044      496.0000   841                    330.0000   315146         
   18662  8203      496.0000   837                    330.0000   320884         
@@ -168,7 +168,7 @@ Elapsed time = 373.26 sec. (211210.59 ticks, tree = 1724.86 MB, solutions = 0)
   21747  9008      496.0000   861                    330.0000   341526         
   22296  9177      496.0000   826                    330.0000   347751         
   22814  9254      496.0000   825                    330.0000   351198         
-Elapsed time = 439.85 sec. (249401.07 ticks, tree = 2100.94 MB, solutions = 0)
+Elapsed time = 434.83 sec. (249401.07 ticks, tree = 2100.94 MB, solutions = 0)
 Nodefile size = 32.73 MB (9.64 MB after compression)
   23382  9376      496.0000  1030                    330.0000   352093         
   24083  9739      662.0000   679                    330.0000   356973         
@@ -180,7 +180,7 @@ Nodefile size = 32.73 MB (9.64 MB after compression)
   27808 10516      495.0000  1290                    330.0000   378751         
   28332 10670      496.0000  1102                    330.0000   381214         
   28926 10676      496.0000   704                    330.0000   382105         
-Elapsed time = 509.73 sec. (287600.68 ticks, tree = 2422.93 MB, solutions = 0)
+Elapsed time = 500.14 sec. (287600.68 ticks, tree = 2422.93 MB, solutions = 0)
 Nodefile size = 354.64 MB (106.82 MB after compression)
   29595 10887    infeasible                          330.0000   387224         
   30349 11126      496.0000   662                    330.0000   392319         
@@ -192,7 +192,7 @@ Nodefile size = 354.64 MB (106.82 MB after compression)
   34088 11704    infeasible                          330.0000   410282         
   34769 11813    infeasible                          330.0000   415970         
   35325 11858      496.0000   587                    330.0000   416231         
-Elapsed time = 575.48 sec. (325785.21 ticks, tree = 2684.96 MB, solutions = 0)
+Elapsed time = 561.92 sec. (325785.21 ticks, tree = 2684.96 MB, solutions = 0)
 Nodefile size = 609.42 MB (182.51 MB after compression)
   35877 12019      662.0000   655                    330.0000   418874         
   36439 12247      658.0000  1090                    330.0000   423048         
@@ -204,7 +204,7 @@ Nodefile size = 609.42 MB (182.51 MB after compression)
   40233 12657    infeasible                          330.0000   439716         
   40765 12862      330.0000  1579                    330.0000   447250         
   41410 12902      495.0000  1349                    330.0000   457815         
-Elapsed time = 638.51 sec. (363993.03 ticks, tree = 2913.16 MB, solutions = 0)
+Elapsed time = 625.12 sec. (363993.03 ticks, tree = 2913.16 MB, solutions = 0)
 Nodefile size = 824.36 MB (246.83 MB after compression)
   42154 12879      496.0000   573                    330.0000   443504         
   42787 13122    infeasible                          330.0000   461672         
@@ -216,7 +216,7 @@ Nodefile size = 824.36 MB (246.83 MB after compression)
   46381 14465      496.0000   937                    330.0000   501196         
   46980 14468    infeasible                          330.0000   501253         
   47521 14983      496.0000  1199                    330.0000   508872         
-Elapsed time = 704.07 sec. (402201.22 ticks, tree = 3412.03 MB, solutions = 0)
+Elapsed time = 690.40 sec. (402201.22 ticks, tree = 3412.03 MB, solutions = 0)
 Nodefile size = 1334.99 MB (400.18 MB after compression)
   48115 14994    infeasible                          330.0000   509022         
   48689 15209      496.0000  1198                    330.0000   511908         
@@ -228,7 +228,7 @@ Nodefile size = 1334.99 MB (400.18 MB after compression)
   52608 16120    infeasible                          330.0000   524342         
   53136 16386    infeasible                          330.0000   535225         
   53735 16395    infeasible                          330.0000   535346         
-Elapsed time = 768.52 sec. (440402.38 ticks, tree = 3750.62 MB, solutions = 0)
+Elapsed time = 754.15 sec. (440402.38 ticks, tree = 3750.62 MB, solutions = 0)
 Nodefile size = 1670.63 MB (501.22 MB after compression)
   54426 16567      497.0000   828                    330.0000   537798         
   55224 16605      496.0000   938                    330.0000   538484         
@@ -240,7 +240,7 @@ Nodefile size = 1670.63 MB (501.22 MB after compression)
   59064 17179      496.0000   676                    330.0000   549083         
   59819 17412    infeasible                          330.0000   552627         
   60492 17534    infeasible                          330.0000   554901         
-Elapsed time = 832.54 sec. (478587.29 ticks, tree = 4027.49 MB, solutions = 0)
+Elapsed time = 817.26 sec. (478587.29 ticks, tree = 4027.49 MB, solutions = 0)
 Nodefile size = 1950.34 MB (584.03 MB after compression)
   61078 17727      495.0000  1304                    330.0000   557159         
   61655 17649      662.0000   500                    330.0000   557821         
@@ -252,7 +252,7 @@ Nodefile size = 1950.34 MB (584.03 MB after compression)
   65651 18294      495.0000  1387                    330.0000   567969         
   66181 18432      495.0000  1387                    330.0000   569698         
   66742 18401    infeasible                          330.0000   569901         
-Elapsed time = 895.90 sec. (516778.58 ticks, tree = 4235.08 MB, solutions = 0)
+Elapsed time = 883.02 sec. (516778.58 ticks, tree = 4235.08 MB, solutions = 0)
 Nodefile size = 2157.38 MB (646.00 MB after compression)
   67365 18642    infeasible                          330.0000   573002         
   67982 18725      662.0000   498                    330.0000   573300         
@@ -264,7 +264,7 @@ Nodefile size = 2157.38 MB (646.00 MB after compression)
   71668 19268      496.0000   586                    330.0000   590868         
   72244 19263    infeasible                          330.0000   591342         
   72842 19365      497.0000   714                    330.0000   592511         
-Elapsed time = 958.37 sec. (554993.81 ticks, tree = 4468.18 MB, solutions = 0)
+Elapsed time = 946.07 sec. (554993.81 ticks, tree = 4468.18 MB, solutions = 0)
 Nodefile size = 2372.61 MB (711.59 MB after compression)
   73447 19624      330.0000  1619                    330.0000   609662         
   74088 19750    infeasible                          330.0000   612483         
@@ -276,7 +276,7 @@ Nodefile size = 2372.61 MB (711.59 MB after compression)
   76844 20708      495.0000  1228                    330.0000   648493         
   76920 20970      495.0000  1154                    330.0000   652270         
   76972 20915      331.0000  1524                    330.0000   652446         
-Elapsed time = 1087.81 sec. (607270.07 ticks, tree = 4844.04 MB, solutions = 0)
+Elapsed time = 1072.29 sec. (607270.07 ticks, tree = 4844.04 MB, solutions = 0)
 Nodefile size = 2764.82 MB (830.68 MB after compression)
   77017 21063      331.0000  1593                    330.0000   659057         
   77170 21088      495.0000  1113                    330.0000   659656         
@@ -288,7 +288,7 @@ Nodefile size = 2764.82 MB (830.68 MB after compression)
   80153 21760      331.0000  1520                    330.0000   685226         
   80797 22079      476.0000  1278                    330.0000   688937         
   81448 22182      496.0000  1027                    330.0000   688963         
-Elapsed time = 1173.60 sec. (645583.66 ticks, tree = 5152.22 MB, solutions = 0)
+Elapsed time = 1153.81 sec. (645583.66 ticks, tree = 5152.22 MB, solutions = 0)
 Nodefile size = 3072.65 MB (924.88 MB after compression)
   82127 22623      496.0000  1033                    330.0000   694563         
   82713 22768      330.0000  1281                    330.0000   696489         
@@ -300,7 +300,7 @@ Nodefile size = 3072.65 MB (924.88 MB after compression)
   86073 23322      495.0000  1136                    330.0000   733354         
   86768 23781      496.0000   883                    330.0000   753050         
   87383 24237    infeasible                          330.0000   765448         
-Elapsed time = 1237.62 sec. (683781.40 ticks, tree = 5653.24 MB, solutions = 0)
+Elapsed time = 1217.58 sec. (683781.40 ticks, tree = 5653.24 MB, solutions = 0)
 Nodefile size = 3574.62 MB (1080.32 MB after compression)
   87991 24237    infeasible                          330.0000   765587         
   88591 24592    infeasible                          330.0000   765925         
@@ -312,7 +312,7 @@ Nodefile size = 3574.62 MB (1080.32 MB after compression)
   92155 25980      496.0000   752                    330.0000   791936         
   92719 26122    infeasible                          330.0000   796247         
   93317 26123      496.0000   752                    330.0000   796317         
-Elapsed time = 1301.18 sec. (722011.13 ticks, tree = 6112.96 MB, solutions = 0)
+Elapsed time = 1281.09 sec. (722011.13 ticks, tree = 6112.96 MB, solutions = 0)
 Nodefile size = 4033.63 MB (1226.39 MB after compression)
   93951 26290      496.0000   879                    330.0000   797736         
   94710 26310      496.0000   796                    330.0000   797826         
@@ -324,7 +324,7 @@ Nodefile size = 4033.63 MB (1226.39 MB after compression)
   98107 27181      495.0000   990                    330.0000   806114         
   98737 27463      496.0000   842                    330.0000   815411         
   99444 27595      495.0000   732                    330.0000   821679         
-Elapsed time = 1366.73 sec. (760218.22 ticks, tree = 6471.22 MB, solutions = 0)
+Elapsed time = 1346.05 sec. (760218.22 ticks, tree = 6471.22 MB, solutions = 0)
 Nodefile size = 4378.03 MB (1331.42 MB after compression)
  100126 27831    infeasible                          330.0000   825080         
  100683 27874    infeasible                          330.0000   825278         
@@ -336,7 +336,7 @@ Nodefile size = 4378.03 MB (1331.42 MB after compression)
  104355 28830      496.0000   605                    330.0000   857724         
  105025 28938      496.0000   976                    330.0000   858148         
  105616 29349      496.0000  1155                    330.0000   871162         
-Elapsed time = 1435.02 sec. (798434.82 ticks, tree = 6899.73 MB, solutions = 0)
+Elapsed time = 1411.11 sec. (798434.82 ticks, tree = 6899.73 MB, solutions = 0)
 Nodefile size = 4817.14 MB (1466.79 MB after compression)
  106116 29399      495.0000  1025                    330.0000   871828         
  106639 29554      495.0000  1233                    330.0000   875219         
@@ -348,7 +348,7 @@ Nodefile size = 4817.14 MB (1466.79 MB after compression)
  110421 29990      496.0000   829                    330.0000   882374         
  110950 30026      496.0000   770                    330.0000   882811         
  111489 30560    infeasible                          330.0000   884848         
-Elapsed time = 1501.00 sec. (836638.85 ticks, tree = 7195.87 MB, solutions = 0)
+Elapsed time = 1478.98 sec. (836638.85 ticks, tree = 7195.87 MB, solutions = 0)
 Nodefile size = 5115.65 MB (1561.06 MB after compression)
  112030 30581      496.0000   831                    330.0000   886792         
  112696 30932      496.0000   765                    330.0000   887196         
@@ -360,7 +360,7 @@ Nodefile size = 5115.65 MB (1561.06 MB after compression)
  116684 32129      496.0000  1144                    330.0000   900687         
  117455 32360      496.0000   718                    330.0000   901495         
  118120 32597      495.0000  1217                    330.0000   904442         
-Elapsed time = 1567.25 sec. (874817.79 ticks, tree = 7692.97 MB, solutions = 0)
+Elapsed time = 1543.77 sec. (874817.79 ticks, tree = 7692.97 MB, solutions = 0)
 Nodefile size = 5596.72 MB (1713.05 MB after compression)
  118731 32879    infeasible                          330.0000   905873         
  119451 32970    infeasible                          330.0000   907121         
@@ -372,7 +372,7 @@ Nodefile size = 5596.72 MB (1713.05 MB after compression)
  122976 34087      495.0000  1369                    330.0000   944810         
  123662 34287    infeasible                          330.0000   947002         
  124369 34555      495.0000  1117                    330.0000   950571         
-Elapsed time = 1633.07 sec. (913024.08 ticks, tree = 8171.36 MB, solutions = 0)
+Elapsed time = 1608.10 sec. (913024.08 ticks, tree = 8171.36 MB, solutions = 0)
 Nodefile size = 6058.82 MB (1857.31 MB after compression)
  125033 34824    infeasible                          330.0000   950525         
  125623 35466      496.0000   933                    330.0000   956832         
@@ -384,7 +384,7 @@ Nodefile size = 6058.82 MB (1857.31 MB after compression)
  129479 37078      496.0000   937                    330.0000   986553         
  130187 37056    infeasible                          330.0000   986776         
  130816 37614      495.0000  1310                    330.0000   989151         
-Elapsed time = 1703.56 sec. (951220.66 ticks, tree = 8920.52 MB, solutions = 0)
+Elapsed time = 1675.30 sec. (951220.66 ticks, tree = 8920.52 MB, solutions = 0)
 Nodefile size = 6782.81 MB (2084.49 MB after compression)
  131528 38104      498.0000   843                    330.0000   999117         
  132204 38378      495.0000   839                    330.0000   999251         
@@ -396,28 +396,33 @@ Nodefile size = 6782.81 MB (2084.49 MB after compression)
  136405 40269      496.0000   550                    330.0000  1011505         
  137113 40292    infeasible                          330.0000  1011889         
  137795 40711      495.0000   603                    330.0000  1012488         
-Elapsed time = 1772.60 sec. (989424.65 ticks, tree = 9681.85 MB, solutions = 0)
+Elapsed time = 1738.91 sec. (989424.65 ticks, tree = 9681.85 MB, solutions = 0)
 Nodefile size = 7574.94 MB (2331.24 MB after compression)
  138469 41262      495.0000   596                    330.0000  1013635         
  139166 41657      495.0000  1254                    330.0000  1015842         
  139936 41843      495.0000   570                    330.0000  1014886         
  140703 42258    infeasible                          330.0000  1018289         
+ 141451 42269    infeasible                          330.0000  1018528         
+ 142050 42403      495.0000  1267                    330.0000  1019915         
+ 142719 42665      498.0000   668                    330.0000  1019975         
+ 143352 42830      495.0000   940                    330.0000  1023086         
+ 143993 42830      495.0000   940                    330.0000  1023194         
 
 Cover cuts applied:  385
-Implied bound cuts applied:  2039
+Implied bound cuts applied:  2058
 Mixed integer rounding cuts applied:  637
 Zero-half cuts applied:  199
 Lift and project cuts applied:  2
 Gomory fractional cuts applied:  49
 
 Root node processing (before b&c):
-  Real time             =  101.07 sec. (72991.46 ticks)
+  Real time             =   99.76 sec. (72985.25 ticks)
 Parallel b&c, 8 threads:
-  Real time             = 1702.55 sec. (933786.56 ticks)
-  Sync time (average)   =  253.87 sec.
+  Real time             = 1703.66 sec. (954897.48 ticks)
+  Sync time (average)   =  254.25 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) = 1803.62 sec. (1006778.02 ticks)
+Total (root+branch&cut) = 1803.42 sec. (1027882.74 ticks)
 ! --------------------------------------------------------
 ! Problem is UNKNOWN
 ! CPLEX Status = AbortTimeLim

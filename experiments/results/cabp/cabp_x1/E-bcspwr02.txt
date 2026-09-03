@@ -14,14 +14,14 @@ Aggregator did 262 substitutions.
 Reduced MIP has 539 rows, 2759 columns, and 5954 nonzeros.
 Reduced MIP has 2484 binaries, 109 generals, 0 SOSs, and 166 indicators.
 Presolve time = 0.01 sec. (9.02 ticks)
-Probing time = 0.02 sec. (15.14 ticks)
+Probing time = 0.03 sec. (15.14 ticks)
 Tried aggregator 2 times.
 Detecting symmetries...
 Aggregator did 17 substitutions.
 Reduced MIP has 522 rows, 2742 columns, and 5937 nonzeros.
 Reduced MIP has 2484 binaries, 140 generals, 0 SOSs, and 166 indicators.
 Presolve time = 0.01 sec. (7.71 ticks)
-Probing time = 0.00 sec. (2.91 ticks)
+Probing time = 0.01 sec. (2.91 ticks)
 Clique table members: 4630.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
@@ -37,8 +37,8 @@ Root relaxation solution time = 0.01 sec. (4.37 ticks)
       0     0       32.0000    87                   Cuts: 114      330         
 *     0+    0                           49.0000       32.0000            34.69%
       0     2       32.0000    53       49.0000       32.0000      330   34.69%
-Elapsed time = 0.29 sec. (201.30 ticks, tree = 0.02 MB, solutions = 1)
-*   261   159      integral     0       48.0000       32.0000     2287   33.33%
+Elapsed time = 0.43 sec. (201.30 ticks, tree = 0.02 MB, solutions = 1)
+*   261   159      integral     0       48.0000       32.0000     2290   33.33%
 
 Clique cuts applied:  3
 Cover cuts applied:  36
@@ -49,13 +49,13 @@ Lift and project cuts applied:  15
 Gomory fractional cuts applied:  12
 
 Root node processing (before b&c):
-  Real time             =    0.29 sec. (200.74 ticks)
+  Real time             =    0.43 sec. (200.74 ticks)
 Parallel b&c, 8 threads:
-  Real time             =    0.06 sec. (46.67 ticks)
-  Sync time (average)   =    0.01 sec.
+  Real time             =    0.09 sec. (46.67 ticks)
+  Sync time (average)   =    0.02 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.35 sec. (247.41 ticks)
+Total (root+branch&cut) =    0.52 sec. (247.41 ticks)
 ! --------------------------------------------------------
 ! Status: OPTIMAL
 ! Best span = 48
