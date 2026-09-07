@@ -1,0 +1,128 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-MIP-for-MinSpanLabeling/benchmarks/cabp/S-sherman4.mtx.rnd
+! Target value is set to 258
+! Lower bound is set to 259
+! Upper bound is set to 546
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic Antibandwidth
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               1800
+Tried aggregator 2 times.
+MIP Presolve eliminated 1345 rows and 1368 columns.
+MIP Presolve modified 596200 coefficients.
+Aggregator did 4317 substitutions.
+Reduced MIP has 9979 rows, 304844 columns, and 915352 nonzeros.
+Reduced MIP has 299729 binaries, 1888 generals, 0 SOSs, and 3227 indicators.
+Presolve time = 1.68 sec. (1588.54 ticks)
+Probing time = 2.00 sec. (563.06 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 9979 rows, 304844 columns, and 915352 nonzeros.
+Reduced MIP has 299729 binaries, 2433 generals, 0 SOSs, and 3227 indicators.
+Presolve time = 1.24 sec. (545.31 ticks)
+Probing time = 0.29 sec. (70.57 ticks)
+Clique table members: 91726.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 26.47 sec. (16094.27 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      516.0000  3042                    516.0000       16         
+      0     0      516.0000  3214                   Cuts: 934    10210         
+      0     0      516.0000  3039                   Cuts: 549    36870         
+      0     0      516.0000  3106                   Cuts: 776    49415         
+Heuristic still looking.
+Heuristic still looking.
+Detecting symmetries...
+      0     2      516.0000  2457                    516.0000    64699         
+Elapsed time = 745.11 sec. (782467.93 ticks, tree = 0.02 MB, solutions = 0)
+      1     3      516.0000  2986                    516.0000    64784         
+      2     4      516.0000  2437                    516.0000    64989         
+      3     5      516.0000  2872                    516.0000    65093         
+      4     6      516.0000  2525                    516.0000    65360         
+      5     7      516.0000  2486                    516.0000    65652         
+      6     8      516.0000  2404                    516.0000    65755         
+      7     9      516.0000  2452                    516.0000    65935         
+      8     6      516.0000  2578                    516.0000    65245         
+      9     7      516.0000  2471                    516.0000    65370         
+     10    10      516.0000  2417                    516.0000    71988         
+Elapsed time = 805.57 sec. (816515.22 ticks, tree = 0.19 MB, solutions = 0)
+     11     4      516.0000  2902                    516.0000    64857         
+     12     9      516.0000  2474                    516.0000    65998         
+     13     3      516.0000  3084                    516.0000    64875         
+     14     8      516.0000  2220                    516.0000    72884         
+     17    15      516.0000  2264                    516.0000    80503         
+     18    19      516.0000  2838                    516.0000    97720         
+     19    14      516.0000  2290                    516.0000    84514         
+     20    12      516.0000  2346                    516.0000    82961         
+     21     5      516.0000  2807                    516.0000    77677         
+     22    18      516.0000  2273                    516.0000    95271         
+Elapsed time = 935.89 sec. (886050.27 ticks, tree = 0.54 MB, solutions = 0)
+     23    20      516.0000  2303                    516.0000   105308         
+     24    17      516.0000  2290                    516.0000    95113         
+     25    26      516.0000  2363                    516.0000   161004         
+     26    24      516.0000  2221                    516.0000   160267         
+     27    21      516.0000  2233                    516.0000   127050         
+     28    22      516.0000  2714                    516.0000   146067         
+     29    16      516.0000  3018                    516.0000   129857         
+     31    27      516.0000  2324                    516.0000   165865         
+     32    23      516.0000  2240                    516.0000   165610         
+     33    33      516.0000  2761                    516.0000   265973         
+Elapsed time = 1072.15 sec. (957532.95 ticks, tree = 1.92 MB, solutions = 0)
+     34    34      516.0000  2325                    516.0000   266164         
+     37    36      516.0000  2354                    516.0000   266479         
+     38    27      516.0000  2208                    516.0000   189735         
+     39    29      516.0000  2216                    516.0000   190330         
+     40    30      516.0000  2214                    516.0000   213212         
+     41    29      516.0000  2791                    516.0000   203099         
+     42    37      516.0000  2216                    516.0000   274303         
+     43    34      516.0000  2216                    516.0000   292244         
+     44    43    infeasible                          516.0000   364616         
+     46    35      545.0000  2399                    516.0000   330517         
+Elapsed time = 1247.61 sec. (1035585.74 ticks, tree = 1.77 MB, solutions = 0)
+     47    40      516.0000  2485                    516.0000   371858         
+     48    36    infeasible                          516.0000   352098         
+     49    42    infeasible                          516.0000   376780         
+     50    46    infeasible                          516.0000   436251         
+     51    46      517.0000  2747                    516.0000   393976         
+     52    36      517.0000  2970                    516.0000   361158         
+     53    39      516.0000  2824                    516.0000   373349         
+     54    47      516.0000  2741                    516.0000   413645         
+     55    49      516.0000  2381                    516.0000   434148         
+     56    46    infeasible                          516.0000   510624         
+Elapsed time = 1527.32 sec. (1178898.35 ticks, tree = 2.83 MB, solutions = 0)
+     57    48      545.0000  3073                    516.0000   441445         
+     58    49      516.0000  2970                    516.0000   542300         
+     59    50      517.0000  2606                    516.0000   569291         
+     60    51      517.0000  2812                    516.0000   591656         
+     61    52      516.0000  2366                    516.0000   639517         
+     62    47      516.0000  2953                    516.0000   470358         
+     63    47      516.0000  2775                    516.0000   505016         
+     65    53      516.0000  2655                    516.0000   662359         
+     67    58      516.0000  2656                    516.0000   766293         
+     68    54      516.0000  2240                    516.0000   672634         
+Elapsed time = 1721.45 sec. (1285469.67 ticks, tree = 3.83 MB, solutions = 0)
+     70    55      516.0000  2259                    516.0000   720442         
+     71    59      516.0000  2445                    516.0000   773716         
+     72    55      516.0000  2176                    516.0000   680695         
+
+Cover cuts applied:  90
+Implied bound cuts applied:  1017
+Mixed integer rounding cuts applied:  136
+Zero-half cuts applied:  39
+
+Root node processing (before b&c):
+  Real time             =  673.04 sec. (700771.14 ticks)
+Parallel b&c, 8 threads:
+  Real time             = 1127.15 sec. (662168.26 ticks)
+  Sync time (average)   =  208.10 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) = 1800.19 sec. (1362939.40 ticks)
+! --------------------------------------------------------
+! Problem is UNKNOWN
+! CPLEX Status = AbortTimeLim
+! --------------------------------------------------------

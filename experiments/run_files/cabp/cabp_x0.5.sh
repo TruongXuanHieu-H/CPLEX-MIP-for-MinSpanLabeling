@@ -5,7 +5,7 @@ ROOT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 
 build_dir="$ROOT_DIR/build"
 dataset_dir="$ROOT_DIR/benchmarks/cabp"
-report_dir="$ROOT_DIR/experiments/results/cabp/cabp_x0.5_has_hole"
+report_dir="$ROOT_DIR/experiments/results/cabp/cabp_x0.5"
 time_limit="1800"
 vertices_mode="has_hole"
 target_value_mode="cabp"
